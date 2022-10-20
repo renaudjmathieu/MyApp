@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './elephant.png';
 import './App.css';
 
 function App() {
@@ -6,16 +6,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>
+          Renaud Mathieu
+        </h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Credly
         </a>
       </header>
     </div>
