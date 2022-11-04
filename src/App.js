@@ -23,7 +23,15 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Databricks
+          Databricks credentials
+        </a>
+        <a
+          className="App-link"
+          href="https://github.com/renaudjmathieu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
         </a>
       </header>
     </div>
