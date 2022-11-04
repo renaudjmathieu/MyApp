@@ -33,6 +33,14 @@ function App() {
         >
           GitHub
         </a>
+        <a
+          className="App-link"
+          href="https://www.kaggle.com/renaudmathieu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Kaggle
+        </a>
       </header>
     </div>
   );
