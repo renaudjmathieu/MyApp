@@ -17,6 +17,14 @@ function App() {
         >
           Credly
         </a>
+        <a
+          className="App-link"
+          href="https://credentials.databricks.com/profile/renaudmathieu/wallet"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Databricks
+        </a>
       </header>
     </div>
   );
