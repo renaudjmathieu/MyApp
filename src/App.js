@@ -18,7 +18,6 @@ function App() {
       <h1>
         Renaud Mathieu
       </h1>
-      <h2>{data}</h2>
       <a
         className="App-link"
         href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1"
@@ -52,6 +51,11 @@ function App() {
         Kaggle
       </a>
     </header>
+    <footer className="App-footer">
+      <p>
+        {data}
+      </p>
+    </footer>
   </div>
 }
 

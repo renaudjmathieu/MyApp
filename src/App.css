@@ -24,6 +24,10 @@
   color: #000;
 }
 
+.App-footer {
+  color: #fff;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,8 +39,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.App h2 {
-  color: #fff;
 }
