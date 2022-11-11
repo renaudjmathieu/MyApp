@@ -1,8 +1,8 @@
-# Azure Static Web Apps - React App
+# :monkey_face: Azure Static Web Apps - React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## :scroll: Available Scripts
 
 In the project directory, you can run:
 
@@ -18,6 +18,19 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `func start`
+
+Go to the `api` folder:
+```	
+cd api
+```	
+Run the Azure Functions app locally: 
+```	
+func start
+```	
+
+See [this section](https://learn.microsoft.com/en-us/training/modules/publish-static-web-app-api-preview-url/4-exercise-function-app?pivots=react) for more information.
 
 ### `npm run build`
 
