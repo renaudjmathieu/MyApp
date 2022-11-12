@@ -1,7 +1,5 @@
 #  <a href="https://github.com/renaudjmathieu/my-web-app"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/public/elephant.ico" width="70">My Web App</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## :scroll: Available Scripts
 
 In the project directory, you can run:
@@ -59,12 +57,15 @@ To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www
 
 
 # :heart: Attributions
-This app makes use of [STM data](https://www.stm.info/en/about/developers), available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+It makes use of [STM data](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 
-It was built using :
+It was built using these products :
 
 [<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azurestaticwebapps]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
