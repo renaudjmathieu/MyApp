@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import {useLocation} from '@docusaurus/router';
 
 function Auth() {
   const providers = ['twitter', 'github', 'aad'];
-  const redirect = 'euh'; //window.location.pathname
+  const location = useLocation();
   const [userInfo, setUserInfo] = useState();
 
   useEffect(() => {
@@ -29,11 +30,11 @@ function Auth() {
       <ul class="dropdown__menu">
           {!userInfo &&
             providers.map((provider) => (
-              <li><a class="dropdown__link" key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+              <li><a class="dropdown__link" key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${location.pathname}`}>
                 {provider}
               </a></li>
             ))}
-          {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
+          {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${location.pathname}`}>Logout</a>}
       </ul>
       {userInfo && (
         <div>
