@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-const Auth = (props) => {
+function Auth() {
   const providers = ['twitter', 'github', 'aad'];
-  const redirect = window.location.pathname;
+  const redirect = 'euh'; //window.location.pathname
   const [userInfo, setUserInfo] = useState();
 
   useEffect(() => {
@@ -42,6 +42,5 @@ const Auth = (props) => {
       )}
     </div>
   );
-};
-
+}
 export default Auth;
