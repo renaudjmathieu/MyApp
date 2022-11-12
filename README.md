@@ -65,14 +65,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 It makes use of [STM open data](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-
-
-It was built using these products :
-
-[<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azurestaticwebapps]
-[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
-
-[azurestaticwebapps]: https://azure.microsoft.com/en-us/products/app-service/static/
-[react]: https://reactjs.org
-
----
