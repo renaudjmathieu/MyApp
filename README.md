@@ -1,5 +1,7 @@
 #  <a href="https://github.com/renaudjmathieu/my-web-app"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/public/elephant.ico" width="70">My Web App</a>
 
+Blah blah blah
+
 ## :scroll: Available Scripts
 
 In the project directory, you can run:
