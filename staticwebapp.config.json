@@ -1,7 +1,11 @@
 {
   "routes": [
     {
-      "route": "/api/products/*",
+      "route": "/dashboard",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/profile/*",
       "allowedRoles": ["authenticated"]
     },
     {

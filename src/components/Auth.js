@@ -26,7 +26,6 @@ const Auth = (props) => {
   return (
     <div>
       <nav>
-        <p>Auth</p>
         <div>
           {!userInfo &&
             providers.map((provider) => (
