@@ -60,7 +60,7 @@ To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It makes use of [STM data](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
+It makes use of [STM open data](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
