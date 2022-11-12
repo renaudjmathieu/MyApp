@@ -1,4 +1,4 @@
-#  <img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/public/elephant.ico" width="70"> Azure Static Web Apps - React App
+#  <a href="https://github.com/renaudjmathieu/my-web-app"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/public/elephant.ico" width="70">My Web App</a>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
