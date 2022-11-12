@@ -20,8 +20,9 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `func start`
+Run your Azure Functions project locally by following these steps:\
 
-Go to the `api` folder:
+In the Terminal, go to the `api` folder:
 ```	
 cd api
 ```	
@@ -30,7 +31,7 @@ Run the Azure Functions app locally:
 func start
 ```	
 
-See [this section](https://learn.microsoft.com/en-us/training/modules/publish-static-web-app-api-preview-url/4-exercise-function-app?pivots=react) for more information.
+See [this section](https://learn.microsoft.com/en-us/training/modules/publish-static-web-app-api-preview-url/4-exercise-function-app?pivots=react) of the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) for more information.
 
 ### `npm run build`
 
@@ -44,17 +45,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `swa start build --api-location api`
 
-Run the frontend app and API together by starting the app with the Static Web Apps CLI. Running the two parts of your application this way allows the CLI to serve your frontend's build output from a folder, and makes the API accessible to the running app.\
-See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) for more information.
+Run the frontend app and API together by starting the app with the Static Web Apps CLI.\
 
-## Learn More
+Running the two parts of your application this way allows the CLI to serve your frontend's build output from a folder, and makes the APIs accessible to the running app.\
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the he [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) for more information.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :detective: Learn More
+
+To learn React, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
 
 ### Azure Static Web Apps APIs
-You can learn more [here](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api).
+To learn Azure Static Web Apps, check out the [Static Web Apps!](https://www.azurestaticwebapps.dev/) website, the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
 
 
 # :heart: Attributions
