@@ -57,5 +57,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 You can learn more [here](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api).
 
 
-# Attributions
+# :heart: Attributions
 This app makes use of [STM data](https://www.stm.info/en/about/developers), available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
