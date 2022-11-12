@@ -24,23 +24,20 @@ const Auth = (props) => {
   }
 
   return (
-    <div>
-      <nav>
-        <div>
+    <div class="dropdown dropdown--hoverable">
+      <button class="button button--primary">Authentification</button>
+      <ul class="dropdown__menu">
           {!userInfo &&
             providers.map((provider) => (
-              <p><a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+              <li><a class="dropdown__link" key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
                 {provider}
-              </a></p>
+              </a></li>
             ))}
           {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
-        </div>
-      </nav>
+      </ul>
       {userInfo && (
         <div>
-          <div>
-            <p>Welcome {userInfo && userInfo.userDetails} ({userInfo && userInfo.identityProvider})</p>
-          </div>
+          Welcome {userInfo && userInfo.userDetails} ({userInfo && userInfo.identityProvider})
         </div>
       )}
     </div>

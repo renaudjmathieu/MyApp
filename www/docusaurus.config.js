@@ -71,7 +71,13 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/hello', label: 'Hello', position: 'left' },
-          {to: '/authentification', label: 'Authentification', position: 'right'},
+          // Right
+          {
+            type: 'custom-Auth', 
+            position: "right",
+            itemProp: 44, 
+            anotherProp: "xyz"
+          },
           {
             href: 'https://github.com/renaudjmathieu/my-website',
             position: 'right',
