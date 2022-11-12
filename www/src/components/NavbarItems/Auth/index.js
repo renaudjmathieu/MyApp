@@ -26,7 +26,16 @@ function Auth() {
 
   return (
     <div class="dropdown dropdown--hoverable">
-      <button class="button button--primary">Authentification</button>
+      {userInfo && (
+        <div>
+          <button class="button button--outline button--primary">{userInfo && userInfo.userDetails} ({userInfo && userInfo.identityProvider})</button>
+        </div>
+      )}
+      {!userInfo && (
+        <div>
+          <button class="button button--primary">Authentification</button>
+        </div>
+      )}
       <ul class="dropdown__menu">
           {!userInfo &&
             providers.map((provider) => (
@@ -36,11 +45,6 @@ function Auth() {
             ))}
           {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${location.pathname}`}>Logout</a>}
       </ul>
-      {userInfo && (
-        <div>
-          Welcome {userInfo && userInfo.userDetails} ({userInfo && userInfo.identityProvider})
-        </div>
-      )}
     </div>
   );
 }
