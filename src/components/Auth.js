@@ -29,9 +29,9 @@ const Auth = (props) => {
         <div>
           {!userInfo &&
             providers.map((provider) => (
-              <a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+              <p><a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
                 {provider}
-              </a>
+              </a></p>
             ))}
           {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
         </div>
@@ -39,9 +39,7 @@ const Auth = (props) => {
       {userInfo && (
         <div>
           <div>
-            <p>Welcome</p>
-            <p>{userInfo && userInfo.userDetails}</p>
-            <p>{userInfo && userInfo.identityProvider}</p>
+            <p>Welcome {userInfo && userInfo.userDetails} ({userInfo && userInfo.identityProvider})</p>
           </div>
         </div>
       )}
