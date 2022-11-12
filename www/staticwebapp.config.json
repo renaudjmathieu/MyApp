@@ -1,11 +1,11 @@
 {
   "routes": [
     {
-      "route": "/dashboard",
+      "route": "/blog",
       "allowedRoles": ["authenticated"]
     },
     {
-      "route": "/profile/*",
+      "route": "/message/*",
       "allowedRoles": ["authenticated"]
     }
   ],

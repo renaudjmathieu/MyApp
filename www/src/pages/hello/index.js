@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Layout from '@theme/Layout';
-import styles from './styles.module.css';
 
 export default function Hello() {
+
+  const [data, setData] = useState('');
+
+  useEffect(() => {
+    (async function () {
+      const { text } = await (await fetch(`/api/message`)).json();
+      setData(text);
+    })();
+  });
+
   return (
     <Layout title="Hello" description="Hello React Page">
       <div
@@ -14,7 +23,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          Edit <code>pages/hello/index.js</code> and save to reload.
+          {data}
         </p>
       </div>
     </Layout>
