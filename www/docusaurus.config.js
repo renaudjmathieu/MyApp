@@ -71,7 +71,7 @@ const config = {
         title: 'Renaud Mathieu',
         logo: {
           alt: 'Logo',
-          src: 'img/favicon.ico',
+          src: 'img/elephant.svg',
         },
         items: [
           /*

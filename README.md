@@ -1,4 +1,4 @@
-#  <a href="https://github.com/renaudjmathieu/my-website"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/favicon.ico" width="70">My website</a>
+#  <a href="https://github.com/renaudjmathieu/my-website"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/elephant.svg" width="70">My website</a>
 
 
 Blah blah blah

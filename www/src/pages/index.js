@@ -1,14 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
 import styles from './index.module.css';
-
-import Image from '@theme/IdealImage';
-import logo from './../../static/img/elephant_edd018_ec008c.png';
+import ElephantSvg from './../../static/img/elephant.svg';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -16,7 +12,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <Image img={logo} className={styles.heroImg} />
+        <ElephantSvg className={styles.heroSvg} role="img" />
       </div>
     </header>
   );
