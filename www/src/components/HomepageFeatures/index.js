@@ -8,25 +8,25 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_developer_activity_re_39tg.svg').default,
     description: (
       <>
-        Web development is the work involved in developing a website for the Internet or an intranet.
+        Web development is the work involved in developing a website for the Internet.
       </>
     ),
   },
   {
-    title: 'Machine Learning',
+    title: 'Machine Learning (ML)',
     Svg: require('@site/static/img/undraw_chat_bot_re_e2gj.svg').default,
     description: (
       <>
-        Machine learning (ML) is a field of inquiry devoted to understanding and building methods that 'learn', that is, methods that leverage data to improve performance on some set of tasks.
+        ML is a subset of artificial intelligence (AI) devoted to understanding and building methods that learn.
       </>
     ),
   },
   {
-    title: 'Business Intelligence',
+    title: 'Business Intelligence (BI)',
     Svg: require('@site/static/img/undraw_all_the_data_re_hh4w.svg').default,
     description: (
       <>
-        Business intelligence comprises the strategies and technologies used by enterprises for the data analysis and management of business information.
+        BI comprises the strategies and technologies used for the data analysis of business information.
       </>
     ),
   },

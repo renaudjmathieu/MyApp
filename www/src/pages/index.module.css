@@ -25,8 +25,9 @@
 
 
 .heroImg {
-  width: 32vmin;
+  width: 25vmin;
   pointer-events: none;
+  margin-top: 6vmin;
   margin-left: auto;
   margin-right: auto;
 }
