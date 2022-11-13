@@ -20,7 +20,7 @@ const FeatureList = [
     Svg : MachineLearningSvg,
     description: (
       <>
-        ML is a subset of artificial intelligence (AI) devoted to understanding and building methods that learn.
+        ML is a subset of artificial intelligence devoted to understanding and building methods that learn.
       </>
     ),
   },
