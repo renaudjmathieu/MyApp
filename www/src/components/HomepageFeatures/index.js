@@ -1,11 +1,14 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import WebDevelopmentSvg from '../../../static/img/undraw_developer_activity_ec008c.svg';
+import MachineLearningSvg from '../../../static/img/undraw_chat_bot_ec008c.svg';
+import BusinessIntelligenceSvg from '../../../static/img/undraw_all_the_data_ec008c.svg';
 
 const FeatureList = [
   {
     title: 'Web Development',
-    Svg: require('@site/static/img/undraw_developer_activity_re_39tg.svg').default,
+    Svg : WebDevelopmentSvg,
     description: (
       <>
         Web development is the work involved in developing and deploying a website or web app.
@@ -14,7 +17,7 @@ const FeatureList = [
   },
   {
     title: 'Machine Learning (ML)',
-    Svg: require('@site/static/img/undraw_chat_bot_re_e2gj.svg').default,
+    Svg : MachineLearningSvg,
     description: (
       <>
         ML is a subset of artificial intelligence (AI) devoted to understanding and building methods that learn.
@@ -23,7 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Business Intelligence (BI)',
-    Svg: require('@site/static/img/undraw_all_the_data_re_hh4w.svg').default,
+    Svg : BusinessIntelligenceSvg,
     description: (
       <>
         BI comprises the strategies and technologies used for the data analysis of business information.
