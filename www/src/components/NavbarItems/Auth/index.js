@@ -33,7 +33,7 @@ function Auth() {
       )}
       {!userInfo && (
         <div>
-          <button class="button button--primary">Authentification</button>
+          <button class="button button--primary">Sign in</button>
         </div>
       )}
       <ul class="dropdown__menu">

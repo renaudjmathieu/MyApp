@@ -24,7 +24,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 todo
 
 ### `func start`
-Run your Azure Functions project locally by following these steps:\
+Run your Azure Functions project locally by following these steps:
 
 In the Terminal, go to the `api` folder:
 ```	
@@ -49,9 +49,9 @@ Your app is ready to be deployed!
 
 ### `swa start build --api-location api`
 
-Run the frontend app and API together by starting the app with the Static Web Apps CLI.\
+Run the frontend app and API together by starting the app with the Static Web Apps CLI.
 
-Running the two parts of your application this way allows the CLI to serve your frontend's build output from a folder, and makes the APIs accessible to the running app.\
+Running the two parts of your application this way allows the CLI to serve your frontend's build output from a folder, and makes the APIs accessible to the running app.
 
 *See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) for more information.*
 
