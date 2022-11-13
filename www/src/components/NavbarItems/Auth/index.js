@@ -11,7 +11,6 @@ function Auth() {
       setUserInfo(await getUserInfo());
     })();
   }, []);
-
   async function getUserInfo() {
     try {
       const response = await fetch('/.auth/me');
@@ -23,7 +22,6 @@ function Auth() {
       return undefined;
     }
   }
-
   return (
     <div class="dropdown dropdown--hoverable">
       {userInfo && (
