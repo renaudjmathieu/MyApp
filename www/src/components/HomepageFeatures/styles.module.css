@@ -9,11 +9,3 @@
   height: 18vmin;
   width: 18vmin;
 }
-
-/** In mobile view, hide the image */
-@media screen and (max-width: 996px) {
-  .featureSvg {
-    height: 12vmin;
-    width: 12vmin;
-  }
-}
