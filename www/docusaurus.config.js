@@ -139,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Renaud Mathieu. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Renaud Mathieu. Montreal, Canada.`,
       },
       prism: {
         theme: lightCodeTheme,
