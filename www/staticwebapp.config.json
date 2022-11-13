@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/whatever",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/ehhh/*",
+      "allowedRoles": ["authenticated"]
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["*.{css,scss,js,png,gif,ico,jpg,svg}"]
+  }
+}
