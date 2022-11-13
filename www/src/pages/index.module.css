@@ -46,3 +46,10 @@
     transform: rotate(360deg);
   }
 }
+
+/** In mobile view, hide the image */
+@media screen and (max-width: 996px) {
+  .heroImg {
+    display: none;
+  }
+}
