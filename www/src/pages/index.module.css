@@ -8,7 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  
+  background-image: url('https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/text_covers_undraw_plus_coverozlanvopqs9jvu2c.png');
+  background-size:100% 100%;
 }
 
 @media screen and (max-width: 996px) {
