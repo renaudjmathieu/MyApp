@@ -32,6 +32,8 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        docs: false,
+        /*
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -39,6 +41,9 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        */
+        blog: false,
+        /*
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -46,6 +51,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -63,13 +69,15 @@ const config = {
           src: 'img/favicon.ico',
         },
         items: [
+          /*
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          */
+          //{ to: '/blog', label: 'Blog', position: 'left' },
           { to: '/hello', label: 'Hello', position: 'left' },
           // Right
           {
@@ -89,15 +97,17 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+          
           {
-            title: 'Docs',
+            title: 'Random',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Hello',
+                to: '/hello',
               },
             ],
           },
+          
           {
             title: 'Certifications',
             items: [
@@ -129,7 +139,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Renaud Mathieu. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
