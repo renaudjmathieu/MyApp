@@ -115,6 +115,10 @@ const config = {
             title: 'More',
             items: [
               {
+                label: 'GitHub',
+                href: 'https://github.com/renaudjmathieu',
+              },
+              {
                 label: 'Kaggle',
                 href: 'https://www.kaggle.com/renaudmathieu',
               },
