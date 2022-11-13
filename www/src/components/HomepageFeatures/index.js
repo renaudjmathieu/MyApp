@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_developer_activity_re_39tg.svg').default,
     description: (
       <>
-        Web development is the work involved in developing a website for the Internet.
+        Web development is the work involved in developing and deploying a website or web app.
       </>
     ),
   },
