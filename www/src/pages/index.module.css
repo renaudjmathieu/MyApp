@@ -3,14 +3,22 @@
  * and scoped locally.
  */
 
+:root {
+  --heroBanner-background-image: url('https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/text_covers_undraw_plus_edd018_ec008c.png');;
+}
+[data-theme='dark'] {
+  --heroBanner-background-image: url('https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/text_covers_undraw_plus_ec008c_edd018.png');;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: url('https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/text_covers_undraw_plus_coverozlanvopqs9jvu2c.png');
+  background-image: var(--heroBanner-background-image);
   background-size:100% 100%;
 }
+
 
 @media screen and (max-width: 996px) {
   .heroBanner {

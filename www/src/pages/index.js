@@ -8,7 +8,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import styles from './index.module.css';
 
 import Image from '@theme/IdealImage';
-import logo from './../../static/img/elephant.png';
+import logo from './../../static/img/elephant_edd018_ec008c.png';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
