@@ -4,10 +4,10 @@
  */
 
 :root {
-  --heroBanner-background-image: url('https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/text_covers_undraw_plus_edd018_ec008c.png');
+  --heroBanner-background-image: linear-gradient(to bottom right, #edd018 0%, #eda62f 20%, #ec535e 58%, #ec008c 100%);
 }
 [data-theme='dark'] {
-  --heroBanner-background-image: url('https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/text_covers_undraw_plus_ec008c_edd018.png');
+  --heroBanner-background-image: linear-gradient(to bottom right, #ec008c 0%, #ec535e 42%, #eda62f 80%, #edd018 100%);
 }
 
 .heroBanner {
