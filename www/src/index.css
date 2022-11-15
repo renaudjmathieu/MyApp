@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --heroBanner-background-image: linear-gradient(to bottom right, #edd018 0%, #eda62f 20%, #ec535e 58%, #ec008c 100%);
 }
 
 code {

@@ -73,12 +73,10 @@ This project was built using these products :
 
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 [<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azure-static-web-apps]
-[<img src="https://d33wubrfki0l68.cloudfront.net/ea8e37a6a30e9c260a8936d95c579af4a2dd3df7/6ee7e/img/docusaurus_keytar.svg" width="50">][docusaurus]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
 [<img src="https://infima.dev/img/logo.png" width="50">][infima]
 
 [powerbi]: https://powerbi.microsoft.com/en-us/
 [azure-static-web-apps]: https://azure.microsoft.com/en-us/products/app-service/static/
-[docusaurus]: https://docusaurus.io/
 [react]: https://reactjs.org
 [infima]: https://infima.dev
