@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Layout from '@theme/Layout';
 
 export default function Hello() {
 
@@ -13,8 +12,7 @@ export default function Hello() {
   });
 
   return (
-    <Layout title="Hello" description="Hello React Page">
-      <div
+    <div
         style={{
           display: 'flex',
           justifyContent: 'center',
@@ -26,6 +24,5 @@ export default function Hello() {
           {data}
         </p>
       </div>
-    </Layout>
   );
 }

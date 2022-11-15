@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Main from './pages/Main';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  Home,
+  Hello,
+} from "./pages";
+import {
+  NavBar,
+  Footer,
+} from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Main />
+    <Router>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/hello" element={<Hello />} />
+    </Routes>
+    <Footer />
+  </Router>
   </React.StrictMode>
 );
-
-
