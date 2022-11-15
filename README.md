@@ -1,4 +1,4 @@
-#  <a href="https://github.com/renaudjmathieu/my-website"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/elephant.svg" width="70">My website</a>
+#  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/elephant.svg" width="70">My website</a>
 
 
 Blah blah blah
@@ -19,9 +19,6 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npx docusaurus start`
-todo
 
 ### `func start`
 Run your Azure Functions project locally by following these steps:
@@ -64,13 +61,15 @@ To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www
 
 # :heart: Attributions
 
-This website makes use of open-source illustrations from [unDraw](https://undraw.co/).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-It also uses open data from the [STM](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
+It makes use of open-source illustrations from [unDraw](https://undraw.co/).
+
+It also makes uses of open data from the [STM](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-It is built using these products :
+This project was built using these products :
 
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 [<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azure-static-web-apps]
