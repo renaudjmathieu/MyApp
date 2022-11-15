@@ -1,16 +1,15 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
 
 function Footer() {
   return (
-    <div className="footer">
-      <footer class="py-5 bg-dark fixed-bottom">
-        <div class="container">
+    <footer class="py-5 bg-dark ">
+        <Container>
           <p class="m-0 text-center text-white">
             Copyright &copy; Your Website 2020
           </p>
-        </div>
-      </footer>
-    </div>
+        </Container>
+    </footer>
   );
 }
 

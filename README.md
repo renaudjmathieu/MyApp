@@ -74,9 +74,9 @@ This project was built using these products :
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 [<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azure-static-web-apps]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
-[<img src="https://infima.dev/img/logo.png" width="50">][infima]
+[<img src="https://react-bootstrap.github.io/logo.svg" width="50">][react-bootstrap]
 
 [powerbi]: https://powerbi.microsoft.com/en-us/
 [azure-static-web-apps]: https://azure.microsoft.com/en-us/products/app-service/static/
 [react]: https://reactjs.org
-[infima]: https://infima.dev
+[react-bootstrap]: https://react-bootstrap.github.io/

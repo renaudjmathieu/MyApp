@@ -1,28 +1,23 @@
-.App {
-  text-align: center;
-}
-
-
 :root {
-  --heroBanner-background-image: linear-gradient(to bottom right, #edd018 0%, #eda62f 20%, #ec535e 58%, #ec008c 100%);
+  --banner-background-image: linear-gradient(to bottom right, #edd018 0%, #eda62f 20%, #ec535e 58%, #ec008c 100%);
 }
 
 [data-theme='dark'] {
-  --heroBanner-background-image: linear-gradient(to bottom right, #ec008c 0%, #ec535e 42%, #eda62f 80%, #edd018 100%);
+  --banner-background-image: linear-gradient(to bottom right, #ec008c 0%, #ec535e 42%, #eda62f 80%, #edd018 100%);
 }
 
-.heroBanner {
+.banner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-image: var(--heroBanner-background-image);
+  background-image: var(--banner-background-image);
   background-size: 100% 100%;
 }
 
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
+@media screen and (max-width: 991px) {
+  .banner {
     padding: 2rem;
   }
 }
@@ -71,12 +66,14 @@
 }
 
 /** In mobile view, hide the image */
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   .heroSvg {
     display: none;
   }
 }
 
+.feature {
+}
 
 .features {
   display: flex;
@@ -92,4 +89,12 @@
 
 [data-theme='dark'] .featureSvg [fill='#ec008c'] {
   fill: #edd018;
+}
+
+.card-group {
+  border:Red 1px solid;
+}
+
+.card {
+  --bs-card-border-color: Blue 1px solid;
 }

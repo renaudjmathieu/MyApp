@@ -1,16 +1,19 @@
 import React from "react";
-import clsx from 'clsx';
 import styles from './styles.module.css';
+import clsx from 'clsx';
 import { ReactComponent as ElephantSvg } from '../../img/elephant.svg';
 import { ReactComponent as WebDevelopmentSvg } from '../../img/undraw_developer_activity_ec008c.svg';
 import { ReactComponent as MachineLearningSvg } from '../../img/undraw_chat_bot_ec008c.svg';
 import { ReactComponent as BusinessIntelligenceSvg } from '../../img/undraw_all_the_data_ec008c.svg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const FeatureList = [
   {
     title: 'Web Development',
     Svg: WebDevelopmentSvg,
-    description: (
+    text: (
       <>
         Web development is the work involved in developing and deploying a website or web app.
       </>
@@ -19,7 +22,7 @@ const FeatureList = [
   {
     title: 'Machine Learning (ML)',
     Svg: MachineLearningSvg,
-    description: (
+    text: (
       <>
         ML is a subset of artificial intelligence devoted to understanding and building methods that learn.
       </>
@@ -28,7 +31,7 @@ const FeatureList = [
   {
     title: 'Business Intelligence (BI)',
     Svg: BusinessIntelligenceSvg,
-    description: (
+    text: (
       <>
         BI comprises the strategies and technologies used for the data analysis of business information.
       </>
@@ -36,39 +39,44 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, text }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+
+    <Col lg={4} >
+      <div className="text-center">
+      <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+      <div className="text-center px-md-4">
+        <h5>{title}</h5>
+        <p>{text}</p>
       </div>
-    </div>
+
+    </Col>
+
   );
 }
 
 function Home() {
   return (
-    <div className="App">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div class="container">
+    <div class="main-wrapper">
+      <header className={styles.banner}>
+        <Container>
           <h1 class="hero__title">Renaud Mathieu</h1>
           <ElephantSvg className={styles.heroSvg} role="img" />
-        </div>
+        </Container>
       </header>
+      <main>
+        <Container>
+          <section className={styles.features}>
+            <Row>
+              {FeatureList.map((props, idx) => (
+                <Feature key={idx} {...props} />
+              ))}
 
-      <section className={styles.features}>
-        <div className="container">
-          <div className="row">
-            {FeatureList.map((props, idx) => (
-              <Feature key={idx} {...props} />
-            ))}
-          </div>
-        </div>
-      </section>
+            </Row>
+          </section>
+        </Container>
+      </main>
     </div>
   );
 }
