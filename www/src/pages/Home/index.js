@@ -1,10 +1,10 @@
 import React from "react";
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import { ReactComponent as ElephantSvg } from '../../elephant.svg';
-import { ReactComponent as WebDevelopmentSvg } from '../../undraw_developer_activity_ec008c.svg';
-import { ReactComponent as MachineLearningSvg } from '../../undraw_chat_bot_ec008c.svg';
-import { ReactComponent as BusinessIntelligenceSvg } from '../../undraw_all_the_data_ec008c.svg';
+import { ReactComponent as ElephantSvg } from '../../img/elephant.svg';
+import { ReactComponent as WebDevelopmentSvg } from '../../img/undraw_developer_activity_ec008c.svg';
+import { ReactComponent as MachineLearningSvg } from '../../img/undraw_chat_bot_ec008c.svg';
+import { ReactComponent as BusinessIntelligenceSvg } from '../../img/undraw_all_the_data_ec008c.svg';
 
 const FeatureList = [
   {
