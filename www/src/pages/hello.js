@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Hello/styles.module.css';
-
 export default function Hello() {
   const [data, setData] = useState('');
   useEffect(() => {
