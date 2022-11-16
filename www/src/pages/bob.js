@@ -1,16 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 function Bob() {
-
-  const [data, setData] = useState('');
-
-  useEffect(() => {
-    (async function () {
-      const { text } = await (await fetch(`/api/message`)).json();
-      setData(text);
-    })();
-  });
-
   return (
     <div
         style={{
@@ -21,7 +11,7 @@ function Bob() {
           fontSize: '20px',
         }}>
         <p>
-          shiiiiit
+          woooot
         </p>
       </div>
   );
