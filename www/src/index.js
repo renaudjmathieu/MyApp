@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './pages/Home/index.js';
-import Hello from './pages/hello.js';
+import {
+  Home,
+  Hello,
+} from "./pages";
 import {
   NavBar,
   Footer,
 } from "./components";
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

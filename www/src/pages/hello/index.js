@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import styles from './styles.module.css';
 
 export default function Hello() {
-
   const [data, setData] = useState('');
-
   useEffect(() => {
     (async function () {
       const { text } = await (await fetch(`/api/message`)).json();
       setData(text);
     })();
   });
-
   return (
     <div
         style={{
