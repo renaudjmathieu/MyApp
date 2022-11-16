@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './pages/home.js';
-import Hello from './pages/Hello/index.js';
+import Home from './pages/Home/index.js';
+import Hello from './pages/hello.js';
 import {
   NavBar,
   Footer,
