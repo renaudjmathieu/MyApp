@@ -7,6 +7,20 @@ Blah blah blah
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install the necessary packages by following these steps:
+
+In the Terminal, go to the `www` folder:
+```	
+cd my-website
+cd www
+```	
+Install the necessary packages
+```	
+npm install
+```	
+
 ### `npm run dev`
 
 Runs the app in the development mode by following these steps:
