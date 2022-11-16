@@ -1,10 +1,10 @@
 import React from "react";
 import styles from './styles.module.css';
 import clsx from 'clsx';
-import { ReactComponent as ElephantSvg } from '../../img/elephant.svg';
-import { ReactComponent as WebDevelopmentSvg } from '../../img/undraw_developer_activity_ec008c.svg';
-import { ReactComponent as MachineLearningSvg } from '../../img/undraw_chat_bot_ec008c.svg';
-import { ReactComponent as BusinessIntelligenceSvg } from '../../img/undraw_all_the_data_ec008c.svg';
+import ElephantSvg from '../../img/elephant.svg';
+import WebDevelopmentSvg from '../../img/undraw_developer_activity_ec008c.svg';
+import MachineLearningSvg from '../../img/undraw_chat_bot_ec008c.svg';
+import BusinessIntelligenceSvg from '../../img/undraw_all_the_data_ec008c.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';

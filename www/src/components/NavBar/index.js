@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from './styles.module.css';
 import clsx from 'clsx';
-import { ReactComponent as ElephantSvg } from '../../img/elephant.svg';
+import ElephantSvg from '../../img/elephant.svg';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
