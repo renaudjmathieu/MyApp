@@ -10,7 +10,7 @@ import {
   NavBar,
   Footer,
 } from "./components";
-import Bob from './pages/Bob';
+import Bob from './pages/bob.js';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

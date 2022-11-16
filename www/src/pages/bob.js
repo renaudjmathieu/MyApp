@@ -11,7 +11,7 @@ function Bob() {
           fontSize: '20px',
         }}>
         <p>
-          woooot
+          woooot bob
         </p>
       </div>
   );
