@@ -12,16 +12,20 @@ import {
   Footer,
 } from "./components";
 
+import ThemeContextWrapper from './theme/ThemeWrapper';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Router>
-    <NavBar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/hello" element={<Hello />} />
-    </Routes>
-    <Footer />
-  </Router>
-  </React.StrictMode>
+  <ThemeContextWrapper>
+    <React.StrictMode>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/hello" element={<Hello />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </React.StrictMode>
+  </ThemeContextWrapper>
 );

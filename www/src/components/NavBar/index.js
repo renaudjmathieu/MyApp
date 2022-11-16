@@ -7,8 +7,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
+import { ThemeContext, themes } from '../../contexts/ThemeContext';
+import ToggleDark from '../toggleDark';
 
 function Navigation() {
+  const [darkMode, setDarkMode] = React.useState(true);
+
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container fluid>
@@ -37,6 +41,17 @@ function Navigation() {
             <Button variant="primary">Sign in</Button>{' '}
              <a href="https://github.com/renaudjmathieu/my-website" className={clsx('nav-link', styles.headerGithubLink)} target="_blank" rel="noreferrer" aria-label="GitHub repository">
              </a>
+             <ThemeContext.Consumer>
+        {({ changeTheme }) => (
+          <ToggleDark
+            toggleDark={() => {
+              setDarkMode(!darkMode);
+              changeTheme(darkMode ? themes.light : themes.dark);
+            }}
+          />
+        )}
+      </ThemeContext.Consumer>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,13 @@
+
+.banner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-image: linear-gradient(to bottom right, #ec008c 0%, #ec535e 42%, #eda62f 80%, #edd018 100%);
+}
+
+.banner-light {
+  background-image: linear-gradient(to bottom right, #edd018 0%, #eda62f 20%, #ec535e 58%, #ec008c 100%);
+}

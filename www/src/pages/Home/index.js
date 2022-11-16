@@ -1,10 +1,11 @@
 import React from "react";
 import styles from './styles.module.css';
+import './index.css';
 import clsx from 'clsx';
 import ElephantSvg from '../../img/elephant.svg';
-import WebDevelopmentSvg from '../../img/undraw_developer_activity_ec008c.svg';
-import MachineLearningSvg from '../../img/undraw_chat_bot_ec008c.svg';
-import BusinessIntelligenceSvg from '../../img/undraw_all_the_data_ec008c.svg';
+import WebDevelopmentSvg from '../../img/undraw_developer_activity_edd018.svg';
+import MachineLearningSvg from '../../img/undraw_chat_bot_edd018.svg';
+import BusinessIntelligenceSvg from '../../img/undraw_all_the_data_edd018.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -41,16 +42,14 @@ const FeatureList = [
 
 function Feature({ Svg, title, text }) {
   return (
-
     <Col lg={4} >
       <div className="text-center">
-      <Svg className={styles.featureSvg} role="img" />
+      <Svg className={clsx(styles.featureSvg, 'featureSvg')} role="img" />
       </div>
       <div className="text-center px-md-4">
         <h5>{title}</h5>
         <p>{text}</p>
       </div>
-
     </Col>
 
   );
@@ -59,9 +58,9 @@ function Feature({ Svg, title, text }) {
 function Home() {
   return (
     <div class="main-wrapper">
-      <header className={styles.banner}>
+      <header className="banner">
         <Container>
-          <h1 class="hero__title">Renaud Mathieu</h1>
+          <h1>Renaud Mathieu</h1>
           <ElephantSvg className={styles.heroSvg} role="img" />
         </Container>
       </header>
