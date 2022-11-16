@@ -7,24 +7,30 @@ Blah blah blah
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in the development mode by following these steps:
 
+In the Terminal, go to the `www` folder:
+```	
+cd my-website
+cd www
+```	
+Run the app in the development mode: 
+```	
+npm run dev
+```	
+Open [http://localhost:8080](http://localhost:8080) to view it in your browser.\
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `func start`
 Run your Azure Functions project locally by following these steps:
 
 In the Terminal, go to the `api` folder:
 ```	
+cd my-website
+cd www
 cd api
 ```	
 Run the Azure Functions app locally: 
@@ -44,32 +50,33 @@ Your app is ready to be deployed!
 
 *See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.*
 
-### `swa start build --api-location api`
+### `swa start ./dist --api-location ./api`
 
 Run the frontend app and API together by starting the app with the Static Web Apps CLI.
 
 Running the two parts of your application this way allows the CLI to serve your frontend's build output from a folder, and makes the APIs accessible to the running app.
 
-*See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) for more information.*
+*See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) and the [Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/) website for more information.*
 
 ## :detective: Learn More
 
-To learn **React**, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
-
 To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www.azurestaticwebapps.dev/) website, the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
 
+To learn **React**, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
+
+This website was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
+
+Check out this article to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
 
 # :heart: Attributions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-It makes use of open-source illustrations from [unDraw](https://undraw.co/).
+This website makes use of open-source illustrations from [unDraw](https://undraw.co/).
 
 It also makes uses of open data from the [STM](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This project was built using these products :
+This website was built using these products :
 
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 [<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azure-static-web-apps]
