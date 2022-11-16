@@ -21,7 +21,7 @@ export default function Hello() {
           fontSize: '20px',
         }}>
         <p>
-          test
+          {data}
         </p>
       </div>
   );

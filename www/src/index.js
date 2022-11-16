@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Home,
-  Hello,
 } from "./pages";
 import {
   NavBar,
@@ -19,7 +18,7 @@ root.render(
     <NavBar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/hello" element={<Hello />} />
+      
     </Routes>
     <Footer />
   </Router>
