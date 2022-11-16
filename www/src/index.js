@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/custom.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Home,
