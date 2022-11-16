@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Home,
-  Hello,
 } from "./pages";
+import Hello from "./pages/Hello/index.js";
 import {
   NavBar,
   Footer,
