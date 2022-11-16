@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
   Home,
 } from "./pages";
-import Hello from "./pages/Hello/index.js";
+import Hello from './pages/hello.js';
 import {
   NavBar,
   Footer,
