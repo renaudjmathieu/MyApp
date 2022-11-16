@@ -8,9 +8,17 @@ module.exports = {
         maxEntrypointSize: 512000,
         maxAssetSize: 512000
     },
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: './src/index.js',
   output: {
     path:path.resolve(__dirname, "dist"),
+    filename: '[name].js'
+  },
+  resolve: {
+    alias: {
+      'components': path.resolve(__dirname, 'src/components'),
+      'pages': path.resolve(__dirname, 'src/pages'),
+    },
+    extensions: ['.js', '.jsx'],
   },
   module: {
     rules: [
@@ -43,4 +51,4 @@ module.exports = {
       template: path.join(__dirname, "public", "index.html")
     }),
   ],
-}
+};
