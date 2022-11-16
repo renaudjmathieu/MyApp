@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ToggleDark(props) {
+function ToggleDark(props) {
   return (
     <div>
       <div class="wrapper">
@@ -17,3 +17,5 @@ export default function ToggleDark(props) {
     </div>
   );
 }
+
+export default ToggleDark;

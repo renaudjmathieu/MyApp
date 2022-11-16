@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
-import { ThemeContext, themes } from '../../contexts/ThemeContext';
+import { ThemeContext, themes } from '../../theme/ThemeContext';
 import ToggleDark from '../toggleDark';
 
 function Navigation() {
