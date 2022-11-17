@@ -1,7 +1,7 @@
 #  <a href="https://www.renaudjmathieu.com" target="_blank"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/elephant.svg" width="70">My website</a>
 
 
-Website to try some stuff I learn (dev, ai, bi, ci, etc.)
+Website to try some stuff I learn (dev, ml, bi, etc.).
 
 ## :scroll: Available Script Commands
 
