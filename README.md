@@ -3,7 +3,7 @@
 
 Website to try some stuff I learn (dev, ml, bi, etc.).
 
-## :scroll: Available Script Commands
+## :technologist: Available Script Commands
 
 In the project directory, you can run:
 
@@ -68,7 +68,7 @@ Running the two parts of your application this way allows the CLI to serve your 
 
 *See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) and the [Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/) website for more information.*
 
-## :detective: Learn More
+## :teacher: Learn More
 
 To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www.azurestaticwebapps.dev/) website, the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
 
@@ -78,7 +78,7 @@ This website was built from scratch, without using <code>create-react-app</code>
 
 Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
 
-## :cop: Attributions
+## :judge: Attributions
 
 This website makes use of open-source illustrations from [unDraw](https://undraw.co/).
 
