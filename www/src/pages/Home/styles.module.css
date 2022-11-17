@@ -61,6 +61,8 @@
 }
 
 .featureSvg {
-  height: 18vmin;
-  width: 18vmin;
+  height: 14vmin;
+  width: 14vmin;
+  margin-top: 1vmin;
+  margin-bottom: 2vmin;
 }
