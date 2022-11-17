@@ -89,8 +89,8 @@ It also makes uses of open data from the [STM](https://www.stm.info/en/about/dev
 This website was built using these products :
 
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
-[<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azure-static-web-apps]
-[<img src="https://webpack.js.org/icon-square-small.85ba630cf0c5f29ae3e3.svg" width="50">][webpack]
+[<img src="https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-azurestaticwebapps/0.11.3/1665693006913/Microsoft.VisualStudio.Services.Icons.Default" width="50">][azure-static-web-apps]
+[<img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png" width="50">][webpack]
 [<img src="https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg" width="110">][babel]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
 [<img src="https://react-bootstrap.github.io/logo.svg" width="45">][react-bootstrap]
