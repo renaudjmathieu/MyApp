@@ -1,9 +1,9 @@
-#  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/elephant.svg" width="70">My website</a>
+#  <a href="https://www.renaudjmathieu.com" target="_blank"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/static/img/elephant.svg" width="70">My website</a>
 
 
-Blah blah blah
+Website to try some stuff I learn (dev, ai, bi, ci, etc.)
 
-## :scroll: Available Scripts
+## :scroll: Available Script Commands
 
 In the project directory, you can run:
 
@@ -23,7 +23,7 @@ npm install
 
 ### `npm run dev`
 
-Runs the app in the development mode by following these steps:
+Runs the app in development mode by following these steps:
 
 In the Terminal, go to the `www` folder:
 ```	
@@ -34,12 +34,12 @@ Run the app in the development mode:
 ```	
 npm run dev
 ```	
-Open [http://localhost:8080](http://localhost:8080) to view it in your browser.\
-The page will reload when you make changes.\
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.\
+The page will reload when there are changes.\
 You may also see any lint errors in the console.
 
 ### `func start`
-Run your Azure Functions project locally by following these steps:
+Run the Azure Functions project locally by following these steps:
 
 In the Terminal, go to the `api` folder:
 ```	
@@ -56,13 +56,9 @@ func start
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `dist` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-*See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.*
+*See the [Webpack](https://webpack.js.org/guides/getting-started/) and the [Babel](https://babeljs.io/docs/en/) documentations for more information.*
 
 ### `swa start ./dist --api-location ./api`
 
@@ -94,10 +90,14 @@ This website was built using these products :
 
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 [<img src="https://azure.microsoft.com/svghandler/app-service-static/?width=600&height=315" width="80">][azure-static-web-apps]
+[<img src="https://webpack.js.org/icon-square-small.85ba630cf0c5f29ae3e3.svg" width="50">][webpack]
+[<img src="https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg" width="110">][babel]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
-[<img src="https://react-bootstrap.github.io/logo.svg" width="50">][react-bootstrap]
+[<img src="https://react-bootstrap.github.io/logo.svg" width="45">][react-bootstrap]
 
 [powerbi]: https://powerbi.microsoft.com/en-us/
 [azure-static-web-apps]: https://azure.microsoft.com/en-us/products/app-service/static/
+[webpack]: https://webpack.js.org
+[babel]: https://babeljs.io
 [react]: https://reactjs.org
 [react-bootstrap]: https://react-bootstrap.github.io/
