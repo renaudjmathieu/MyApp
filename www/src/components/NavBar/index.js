@@ -8,7 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { ThemeContext, themes } from '../../theme/ThemeContext';
-import ToggleDark from '../toggleDark';
+import ToggleDark from '../NavbarItems/toggleDark.js';
 import Auth from '../NavbarItems/Auth';
 
 function Navigation() {

@@ -23,17 +23,10 @@ const Auth = (props) => {
       return undefined;
     }
   }
-
+  
   return (
     <Dropdown>
-      {userInfo && (
-        <div>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">{userInfo && userInfo.userDetails} ({userInfo && userInfo.identityProvider})</Dropdown.Toggle>
-        </div>
-      )}
-      {!userInfo && (
-        <Dropdown.Toggle variant="success" id="dropdown-basic">Sign in</Dropdown.Toggle>
-      )}
+      <Dropdown.Toggle variant="success" id="dropdown-basic">{userInfo ? `${userInfo.userDetails} (${userInfo.identityProvider})` : `Sign in`}</Dropdown.Toggle>
       <Dropdown.Menu>
         {!userInfo &&
           providers.map((provider) => (
@@ -41,7 +34,7 @@ const Auth = (props) => {
               {provider}
             </Dropdown.Item>
           ))}
-        {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
+        {userInfo && <Dropdown.Item href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</Dropdown.Item>}
       </Dropdown.Menu>
     </Dropdown>
   );

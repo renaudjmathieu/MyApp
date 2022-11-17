@@ -1,7 +1,7 @@
 import React from 'react';
-import LightToggleIcon from '../img/lightToggleIcon.svg';
-import DarkToggleIcon from '../img/DarkToggleIcon.svg';
-import styles from './NavBar/styles.module.css';
+import LightToggleIcon from '../../img/lightToggleIcon.svg';
+import DarkToggleIcon from '../../img/DarkToggleIcon.svg';
+import styles from '../NavBar/styles.module.css';
 import clsx from 'clsx';
 
 function ToggleDark(props) {
