@@ -8,6 +8,7 @@ import {
   NavBar,
   Footer,
 } from "./components";
+import PowerBI from './pages/PowerBI';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -61,6 +62,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hello" element={<Hello />} />
+          <Route path="/pbi" element={<PowerBI />} />
         </Routes>
       </Router>
       <Footer />

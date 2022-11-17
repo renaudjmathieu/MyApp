@@ -1,0 +1,12 @@
+.features {
+    align-items: center;
+    padding: 11.72rem 0;
+    width: 100%;
+  }
+
+img {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 1rem;
+  border : 1px solid #f8f9fa;
+}

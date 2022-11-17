@@ -27,6 +27,9 @@ const NavBar = (props) => {
             <NavLink className="nav-link" to="/hello">
               Hello
             </NavLink>
+            <NavLink className="nav-link" to="/pbi">
+              PowerBI
+            </NavLink>
           </Nav>
           <Nav className={styles.navRight}>
             <Auth />

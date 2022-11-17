@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './styles.module.css';
-import './index.css';
+import '../pages.css';
 import clsx from 'clsx';
 import ElephantSvg from '../../img/elephant.svg';
 import WebDevelopmentSvg from '../../img/web.svg';
@@ -60,7 +60,7 @@ function Home() {
     <div class="main-wrapper">
       <header className="banner">
         <Container>
-          <h1 className>Renaud Mathieu</h1>
+          <h1>Renaud Mathieu</h1>
           <ElephantSvg className={clsx(styles.bannerSvg, 'bannerSvg')} role="img" />
         </Container>
       </header>

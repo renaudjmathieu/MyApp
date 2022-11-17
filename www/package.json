@@ -19,6 +19,10 @@
   "homepage": "https://github.com/renaudjmathieu/my-website#readme",
   "dependencies": {
     "@svgr/webpack": "^6.5.1",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
     "bootstrap": "^5.2.2",
     "clsx": "^1.2.1",
     "copy-webpack-plugin": "^11.0.0",
@@ -39,6 +43,8 @@
     "babel-loader": "^9.1.0",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.9.3",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1"
