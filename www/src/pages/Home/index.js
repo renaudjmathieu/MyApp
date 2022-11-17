@@ -60,8 +60,8 @@ function Home() {
     <div class="main-wrapper">
       <header className="banner">
         <Container>
-          <h1>Renaud Mathieu</h1>
-          <ElephantSvg className={clsx(styles.heroSvg, 'heroSvg')} role="img" />
+          <h1 className>Renaud Mathieu</h1>
+          <ElephantSvg className={clsx(styles.bannerSvg, 'bannerSvg')} role="img" />
         </Container>
       </header>
       <main>

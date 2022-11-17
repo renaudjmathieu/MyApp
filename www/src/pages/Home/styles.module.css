@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.heroSvg {
+.bannerSvg {
   width: 30vmin;
   pointer-events: none;
   margin-top: 6vmin;
@@ -12,29 +12,29 @@
   margin-right: auto;
 }
 
-.heroSvg [fill='#123456'] {
+.bannerSvg [fill='#123456'] {
   fill: #ec008c;
 }
 
-.heroSvg [fill='#fff'] {
+.bannerSvg [fill='#fff'] {
   fill: #edd018;
 }
 
-.heroSvg [fill='#ccc'] {
+.bannerSvg [fill='#ccc'] {
   fill: #eda62f;
 }
 
-.heroSvg [fill='#666'] {
+.bannerSvg [fill='#666'] {
   fill: #ec535e;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .heroSvg {
-    animation: heroSvg-spin infinite 20s linear;
+  .bannerSvg {
+    animation: bannerSvg-spin infinite 20s linear;
   }
 }
 
-@keyframes heroSvg-spin {
+@keyframes bannerSvg-spin {
   from {
     transform: rotate(0deg);
   }
@@ -46,7 +46,7 @@
 
 /** In mobile view, hide the image */
 @media screen and (max-width: 991px) {
-  .heroSvg {
+  .bannerSvg {
     display: none;
   }
 }
