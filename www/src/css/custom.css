@@ -15,15 +15,56 @@
     --theme-dark-color-primary-lighter: #f0d73c;
     --theme-dark-color-primary-lightest: #f3df61;
 
-    --dark-color: rgb(33, 37, 41);
-    --light-color: rgb(248, 249, 250);
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
 }
 
-.theme-light {
+.theme-light .navbar {
     color: var(--dark-color);
+    background-color: var(--light-color);
 }
-.theme-dark {
+.theme-dark .navbar {
     color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+.theme-light main {
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+.theme-dark main {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+.theme-light .banner {
+    color: var(--dark-color);
+    background-image: linear-gradient(to bottom right, var(--theme-dark-color-primary) 0%, #eda62f 20%, #ec535e 58%, var(--theme-light-color-primary) 100%);
+}
+.theme-dark .banner {
+    color: var(--light-color);
+    background-image: linear-gradient(to bottom right, var(--theme-light-color-primary) 0%, #ec535e 42%, #eda62f 80%, var(--theme-dark-color-primary) 100%);
+}
+
+.theme-light .headerSvg [fill='#123456'] {
+    fill: var(--dark-color);
+}
+.theme-dark .headerSvg [fill='#123456'] {
+    fill: var(--light-color);
+}
+
+.theme-light .headerSvg:hover [fill='#123456'] {
+    fill: var(--theme-light-color-primary);
+}
+.theme-dark .headerSvg:hover [fill='#123456'] {
+    fill: var(--theme-dark-color-primary);
+}
+
+.theme-light .featureSvg [fill='#123456'] {
+    fill: var(--theme-light-color-primary);
+}
+.theme-dark .featureSvg [fill='#123456'] {
+    fill: var(--theme-dark-color-primary);
 }
 
 .theme-light .dropdown-menu {

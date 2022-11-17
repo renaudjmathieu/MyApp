@@ -64,7 +64,7 @@ function Home() {
           <ElephantSvg className={styles.heroSvg} role="img" />
         </Container>
       </header>
-      <main class="bg-dark">
+      <main>
         <Container>
           <section className={styles.features}>
             <Row>

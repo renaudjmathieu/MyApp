@@ -74,11 +74,11 @@ To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www
 
 To learn **React**, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
 
-This website was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
+This website was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article from [Prateek Srivastava](https://medium.com/@prateeksrt) on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
 
-Check out this article to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
+Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
 
-# :heart: Attributions
+# :police officer: Attributions
 
 This website makes use of open-source illustrations from [unDraw](https://undraw.co/).
 

@@ -4,18 +4,16 @@ import styles from './styles.module.css';
 import clsx from 'clsx';
 import ElephantSvg from '../../img/elephant.svg';
 import GitHubSvg from '../../img/github.svg';
+import LightToggleIcon from '../../img/lightToggleIcon.svg';
+import DarkToggleIcon from '../../img/darkToggleIcon.svg';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { ThemeContext, themes } from '../../theme/ThemeContext';
-import ToggleDark from '../NavbarItems/toggleDark.js';
 import Auth from '../NavbarItems/Auth';
 
-function Navigation() {
-  const [darkMode, setDarkMode] = React.useState(true);
-
+const NavBar = (props) => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg">
       <Container fluid>
         <Navbar.Brand href="#home">
           <ElephantSvg className={clsx('d-inline-block align-top', styles.brandSvg)} alt="React Bootstrap logo" />
@@ -32,20 +30,16 @@ function Navigation() {
           </Nav>
           <Nav className={styles.navRight}>
             <Auth />
-            <a href="https://github.com/renaudjmathieu/my-website" target="_blank" className={styles.imgLink}  rel="noreferrer" aria-label="GitHub repository">
+            <a href="https://github.com/renaudjmathieu/my-website" target="_blank" className={styles.imgLink} rel="noreferrer" aria-label="GitHub repository">
               <GitHubSvg className={clsx(styles.headerSvg, 'headerSvg')} alt="GitHub logo" />
             </a>
-            <ThemeContext.Consumer>
-              {({ changeTheme }) => (
-                <ToggleDark
-                  toggleDark={() => {
-                    setDarkMode(!darkMode);
-                    changeTheme(darkMode ? themes.light : themes.dark);
-                  }}
-                />
-              )}
-            </ThemeContext.Consumer>
-
+            <a href="#" className={styles.imgLink} onClick={() => {
+              props.toggleColorMode();
+            }}
+            >
+               <DarkToggleIcon id="darkToggleIcon" className={clsx(styles.headerSvg, 'headerSvg')} /> 
+               <LightToggleIcon id="lightToggleIcon" className={clsx(styles.headerSvg, 'headerSvg')} display="none" />
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -53,4 +47,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NavBar;
