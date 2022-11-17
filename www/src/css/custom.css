@@ -6,7 +6,7 @@
     --theme-light-color-primary-light: #ff0599;
     --theme-light-color-primary-lighter: #ff109e;
     --theme-light-color-primary-lightest: #ff34ac;
-    
+
     --theme-dark-color-primary: #edd018;
     --theme-dark-color-primary-dark: #dabf11;
     --theme-dark-color-primary-darker: #ceb410;
@@ -23,6 +23,7 @@
     color: var(--dark-color);
     background-color: var(--light-color);
 }
+
 .theme-dark .navbar {
     color: var(--light-color);
     background-color: var(--dark-color);
@@ -32,6 +33,7 @@
     color: var(--dark-color);
     background-color: var(--light-color);
 }
+
 .theme-dark main {
     color: var(--light-color);
     background-color: var(--dark-color);
@@ -41,6 +43,7 @@
     color: var(--dark-color);
     background-image: linear-gradient(to bottom right, var(--theme-dark-color-primary) 0%, #eda62f 20%, #ec535e 58%, var(--theme-light-color-primary) 100%);
 }
+
 .theme-dark .banner {
     color: var(--light-color);
     background-image: linear-gradient(to bottom right, var(--theme-light-color-primary) 0%, #ec535e 42%, #eda62f 80%, var(--theme-dark-color-primary) 100%);
@@ -49,6 +52,7 @@
 .theme-light .headerSvg [fill='#123456'] {
     fill: var(--dark-color);
 }
+
 .theme-dark .headerSvg [fill='#123456'] {
     fill: var(--light-color);
 }
@@ -56,6 +60,7 @@
 .theme-light .headerSvg:hover [fill='#123456'] {
     fill: var(--theme-light-color-primary);
 }
+
 .theme-dark .headerSvg:hover [fill='#123456'] {
     fill: var(--theme-dark-color-primary);
 }
@@ -63,6 +68,7 @@
 .theme-light .featureSvg [fill='#123456'] {
     fill: var(--theme-light-color-primary);
 }
+
 .theme-dark .featureSvg [fill='#123456'] {
     fill: var(--theme-dark-color-primary);
 }
@@ -71,6 +77,7 @@
     background-color: var(--light-color);
     border-color: var(--theme-light-color-primary);
 }
+
 .theme-dark .dropdown-menu {
     background-color: var(--dark-color);
     border-color: var(--theme-dark-color-primary);
@@ -79,21 +86,26 @@
 .theme-light .dropdown-item {
     color: var(--dark-color);
 }
+
 .theme-light .dropdown-item:hover {
     color: var(--light-color);
-    background-color: var(--theme-light-color-primary-dark);
+    background-color: var(--theme-light-color-primary);
 }
+
 .theme-light .dropdown-item:active {
     color: var(--light-color);
     background-color: var(--theme-light-color-primary-darker);
 }
+
 .theme-dark .dropdown-item {
     color: var(--light-color);
 }
+
 .theme-dark .dropdown-item:hover {
     color: var(--dark-color);
-    background-color: var(--theme-dark-color-primary-dark);
+    background-color: var(--theme-dark-color-primary);
 }
+
 .theme-dark .dropdown-item:active {
     color: var(--dark-color);
     background-color: var(--theme-dark-color-primary-darker);
@@ -102,18 +114,23 @@
 .theme-light .navbar-nav .nav-link {
     color: var(--dark-color);
 }
+
 .theme-light .navbar-nav .nav-link:hover {
     color: var(--theme-light-color-primary);
 }
+
 .theme-light .navbar-nav .nav-link.active {
     color: var(--theme-light-color-primary);
 }
+
 .theme-dark .navbar-nav .nav-link {
     color: var(--light-color);
 }
+
 .theme-dark .navbar-nav .nav-link:hover {
     color: var(--theme-dark-color-primary);
 }
+
 .theme-dark .navbar-nav .nav-link.active {
     color: var(--theme-dark-color-primary);
 }
@@ -123,26 +140,31 @@
     background-color: var(--theme-light-color-primary);
     border-color: var(--theme-light-color-primary);
 }
+
 .theme-light .btn:hover {
     color: var(--light-color);
     background-color: var(--theme-light-color-primary-dark);
     border-color: var(--theme-light-color-primary-dark);
 }
+
 .theme-light .btn:active {
     color: var(--light-color);
     background-color: var(--theme-light-color-primary-darker);
     border-color: var(--theme-light-color-primary-darker);
 }
+
 .theme-dark .btn {
     color: var(--dark-color);
     background-color: var(--theme-dark-color-primary);
     border-color: var(--theme-dark-color-primary);
 }
+
 .theme-dark .btn:hover {
     color: var(--dark-color);
     background-color: var(--theme-dark-color-primary-dark);
     border-color: var(--theme-dark-color-primary-dark);
 }
+
 .theme-dark .btn:active {
     color: var(--dark-color);
     background-color: var(--theme-dark-color-primary-darker);

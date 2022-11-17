@@ -10,6 +10,9 @@
   margin-top: 6vmin;
   margin-left: auto;
   margin-right: auto;
+}
+
+.heroSvg [fill='#123456'] {
   fill: #ec008c;
 }
 
@@ -48,8 +51,7 @@
   }
 }
 
-.feature {
-}
+.feature {}
 
 .features {
   display: flex;

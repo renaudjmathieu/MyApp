@@ -4,6 +4,22 @@
     margin-left: 5px;
 }
 
+.brandSvg [fill='#123456'] {
+    fill: #000;
+}
+
+.brandSvg [fill='#fff'] {
+    fill: #fff;
+}
+
+.brandSvg [fill='#ccc'] {
+    fill: #ccc;
+}
+
+.brandSvg [fill='#666'] {
+    fill: #666;
+}
+
 .navLeft {}
 
 .navRight {

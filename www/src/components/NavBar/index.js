@@ -16,7 +16,7 @@ const NavBar = (props) => {
     <Navbar collapseOnSelect expand="lg">
       <Container fluid>
         <Navbar.Brand href="#home">
-          <ElephantSvg className={clsx('d-inline-block align-top', styles.brandSvg)} alt="React Bootstrap logo" />
+          <ElephantSvg className={clsx('d-inline-block align-top', styles.brandSvg, 'brandSvg')} alt="Elephant logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
