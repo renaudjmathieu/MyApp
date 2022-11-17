@@ -78,7 +78,7 @@ This website was built from scratch, without using <code>create-react-app</code>
 
 Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
 
-# :cop: Attributions
+## :cop: Attributions
 
 This website makes use of open-source illustrations from [unDraw](https://undraw.co/).
 
