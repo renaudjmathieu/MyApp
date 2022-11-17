@@ -25,14 +25,12 @@ export default function ThemeContextWrapper(props) {
           el.style.color = "#fff";
         });
 
+        /*
         document.querySelectorAll('.dropdown-item').forEach((el) => {
-          el.addEventListener('mousedown', function () {
-            el.style.backgroundColor = '#ec008c';
-          });
-          el.addEventListener('mouseup', function () {
-            el.style.backgroundColor = '#fff';
-          });
+          el.classList.remove('dropdown-item-dark');
+          el.classList.add('dropdown-item-light');
         });
+        */
 
         document.querySelectorAll('.nav-link').forEach((el) => {
           el.style.color = "#000";
@@ -84,14 +82,12 @@ export default function ThemeContextWrapper(props) {
           el.style.color = "#000";
         });
 
+        /*
         document.querySelectorAll('.dropdown-item').forEach((el) => {
-          el.addEventListener('mousedown', function () {
-            el.style.backgroundColor = '#edd018';
-          });
-          el.addEventListener('mouseup', function () {
-            el.style.backgroundColor = '#000';
-          });
+          el.classList.remove('dropdown-item-light');
+          el.classList.add('dropdown-item-dark');
         });
+        */
 
         document.querySelectorAll('.nav-link').forEach((el) => {
           el.style.color = "#fff";

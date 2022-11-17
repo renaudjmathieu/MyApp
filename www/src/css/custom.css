@@ -1,3 +1,10 @@
-.dropdown-item:active {
+.dropdown-item-light:active {
+    background-color: #ec008c;
+}
+.dropdown-item-dark:active {
     background-color: #edd018;
 }
+.dropdown-item:active {
+    background-color: lightgray;
+}
+
