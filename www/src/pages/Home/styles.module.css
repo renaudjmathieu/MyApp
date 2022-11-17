@@ -1,0 +1,64 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroSvg {
+  width: 30vmin;
+  pointer-events: none;
+  margin-top: 6vmin;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #ec008c;
+}
+
+.heroSvg [fill='#fff'] {
+  fill: #edd018;
+}
+
+.heroSvg [fill='#ccc'] {
+  fill: #eda62f;
+}
+
+.heroSvg [fill='#666'] {
+  fill: #ec535e;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .heroSvg {
+    animation: heroSvg-spin infinite 20s linear;
+  }
+}
+
+@keyframes heroSvg-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** In mobile view, hide the image */
+@media screen and (max-width: 991px) {
+  .heroSvg {
+    display: none;
+  }
+}
+
+.feature {
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 18vmin;
+  width: 18vmin;
+}
