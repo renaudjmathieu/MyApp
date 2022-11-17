@@ -1,16 +1,19 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
+const srcDir = path.resolve(__dirname, 'src');
+const distDir = path.resolve(__dirname, 'dist');
 
 module.exports = {
   mode: 'production',
-    performance: {
-        hints: false,
-        maxEntrypointSize: 512000,
-        maxAssetSize: 512000
-    },
-  entry: path.join(__dirname, "src", "index.js"),
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  entry: `${srcDir}/index.js`,
   output: {
-    path:path.resolve(__dirname, "dist"),
+    path: distDir,
   },
   module: {
     rules: [
@@ -41,7 +44,7 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
+        test: /\.(png|jp(e*)g|svg|gif|ico)$/,
         use: ['file-loader'],
       },
       {
@@ -52,8 +55,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
-      favicon: "./src/img/favicon.ico"
+      template: `${srcDir}/index.html`,
+      favicon: `${srcDir}/img/favicon.ico`,
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: `${srcDir}/img/favicon.ico`, to: 'favicon.ico' },
+      ]
     }),
   ],
 }
