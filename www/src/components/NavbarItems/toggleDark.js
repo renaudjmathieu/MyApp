@@ -1,6 +1,6 @@
 import React from 'react';
 import LightToggleIcon from '../../img/lightToggleIcon.svg';
-import DarkToggleIcon from '../../img/DarkToggleIcon.svg';
+import DarkToggleIcon from '../../img/darkToggleIcon.svg';
 import styles from '../NavBar/styles.module.css';
 import clsx from 'clsx';
 
