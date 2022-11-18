@@ -1,6 +1,6 @@
 .brandSvg {
-    height: 4vmin;
-    width: 4vmin;
+    height: 36px;
+    width: 36px;
     margin-left: 5px;
 }
 
@@ -23,12 +23,29 @@
 .navLeft {}
 
 .navRight {
-    margin-right: 5px;
+    margin-right: 0.5rem;
+}
+
+.imgLink {
+    margin: 5px 0 0 10px;
 }
 
 .headerSvg {
-    height: 2.8vmin;
-    width: 2.8vmin;
-    margin-left: 1.5vmin;
-    margin-top: 0.6vmin;
+    height: 28px;
+    width: 28px;
+}
+
+@media screen and (max-width: 991px) {
+    .imgLink {
+        margin: 8px 0 5px 0;
+    }
+
+    .headerSvg {
+        height: 32px;
+        width: 32px;
+    }
+
+    .navRight {
+        margin-bottom: 0.5rem;
+    }
 }

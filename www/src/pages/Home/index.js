@@ -1,11 +1,11 @@
 import React from "react";
 import styles from './styles.module.css';
-import './index.css';
+import '../pages.css';
 import clsx from 'clsx';
 import ElephantSvg from '../../img/elephant.svg';
-import WebDevelopmentSvg from '../../img/undraw_developer_activity.svg';
-import MachineLearningSvg from '../../img/undraw_chat_bot.svg';
-import BusinessIntelligenceSvg from '../../img/undraw_all_the_data.svg';
+import WebDevelopmentSvg from '../../img/web.svg';
+import MachineLearningSvg from '../../img/ml.svg';
+import BusinessIntelligenceSvg from '../../img/bi.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -61,7 +61,7 @@ function Home() {
       <header className="banner">
         <Container>
           <h1>Renaud Mathieu</h1>
-          <ElephantSvg className={clsx(styles.heroSvg, 'heroSvg')} role="img" />
+          <ElephantSvg className={clsx(styles.bannerSvg, 'bannerSvg')} role="img" />
         </Container>
       </header>
       <main>

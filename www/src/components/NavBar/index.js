@@ -20,15 +20,18 @@ const NavBar = (props) => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className={clsx('me-auto', styles.navLeft)}>
+          <Nav className={clsx('me-auto', 'navLeft', styles.navLeft)}>
             <NavLink className="nav-link" to="/">
               Renaud Mathieu
             </NavLink>
             <NavLink className="nav-link" to="/hello">
               Hello
             </NavLink>
+            <NavLink className="nav-link" to="/pbi">
+              Power BI
+            </NavLink>
           </Nav>
-          <Nav className={styles.navRight}>
+          <Nav className={clsx('navRight', styles.navRight)}>
             <Auth />
             <a href="https://github.com/renaudjmathieu/my-website" target="_blank" className={styles.imgLink} rel="noreferrer" aria-label="GitHub repository">
               <GitHubSvg className={clsx(styles.headerSvg, 'headerSvg')} alt="GitHub logo" />
@@ -37,8 +40,8 @@ const NavBar = (props) => {
               props.toggleColorMode();
             }}
             >
-               <DarkToggleIcon id="darkToggleIcon" className={clsx(styles.headerSvg, 'headerSvg')} /> 
-               <LightToggleIcon id="lightToggleIcon" className={clsx(styles.headerSvg, 'headerSvg')} display="none" />
+              <DarkToggleIcon id="darkToggleIcon" className={clsx(styles.headerSvg, 'headerSvg')} />
+              <LightToggleIcon id="lightToggleIcon" className={clsx(styles.headerSvg, 'headerSvg')} display="none" />
             </a>
           </Nav>
         </Navbar.Collapse>
