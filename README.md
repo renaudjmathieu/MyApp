@@ -68,6 +68,12 @@ Running the two parts of your application this way allows the CLI to serve your 
 
 *See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) and the [Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/) website for more information.*
 
+### `npm run start`
+
+Run the following script commands : 
+1. <code>npm run build</code>
+2. <code>swa start ./dist --api-location ./api</code>
+
 ## :teacher: Learn More
 
 To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www.azurestaticwebapps.dev/) website, the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
@@ -77,6 +83,8 @@ To learn **React**, check out the [Create React App documentation](https://faceb
 This website was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article from [Prateek Srivastava](https://medium.com/@prateeksrt) on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
 
 Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
+
+Check out [Session 25](https://powerbidevcamp.powerappsportals.com/sessions/session25/) and [Session 26](https://powerbidevcamp.powerappsportals.com/sessions/session26/) from the [Power BI Dev Camp](https://www.powerbidevcamp.net/) website to learn all about Power BI embedding in React. Also, take a look at the [Power BI Embedded Analytics Playground](https://playground.powerbi.com/) website for examples on how you can use [Power BI Embedded](https://azure.microsoft.com/en-us/products/power-bi-embedded/) in your applications.
 
 ## :judge: Attributions
 

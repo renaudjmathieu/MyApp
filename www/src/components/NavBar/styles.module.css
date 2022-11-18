@@ -27,18 +27,25 @@
 }
 
 .imgLink {
+    margin: 5px 0 0 10px;
+}
+
+.headerSvg {
     height: 28px;
     width: 28px;
-    margin: 5px 0 0 10px;
 }
 
 @media screen and (max-width: 991px) {
     .imgLink {
-        height: 32px;
-        width: 32px;
         margin: 8px 0 5px 0;
     }
+
+    .headerSvg {
+        height: 32px;
+        width: 32px;
+    }
+
     .navRight {
         margin-bottom: 0.5rem;
     }
-  }
+}

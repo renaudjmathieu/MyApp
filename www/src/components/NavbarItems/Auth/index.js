@@ -2,7 +2,16 @@ import React, { useState, useEffect } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 const Auth = (props) => {
-  const providers = ['twitter', 'github', 'aad'];
+
+  const providers = [
+    { name: 'Azure AD', value: 'aad' },
+    { name: 'Facebook', value: 'facebook' },
+    { name: 'Google', value: 'google' },
+    { name: 'Github', value: 'github' },
+    { name: 'Twitter', value: 'twitter' },
+    { name: 'Email', value: 'local' },
+  ];
+
   const redirect = window.location.pathname;
   const [userInfo, setUserInfo] = useState();
 
@@ -30,8 +39,8 @@ const Auth = (props) => {
       <Dropdown.Menu>
         {!userInfo &&
           providers.map((provider) => (
-            <Dropdown.Item key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
-              {provider}
+            <Dropdown.Item key={provider.value} href={`/.auth/login/${provider.value}?post_login_redirect_uri=${redirect}`}>
+              {provider.name}
             </Dropdown.Item>
           ))}
         {userInfo && <Dropdown.Item href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</Dropdown.Item>}

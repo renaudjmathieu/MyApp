@@ -31,7 +31,7 @@ function App() {
   React.useEffect(() => {
     switch (mode) {
       case "light":
-        document.getElementById("lightToggleIcon").style.display = "block";
+        document.getElementById("lightToggleIcon").style.display = "initial";
         document.getElementById("darkToggleIcon").style.display = "none";
         document.querySelectorAll('body').forEach((el) => {
           el.classList.add('theme-light');
@@ -42,7 +42,7 @@ function App() {
       case "dark":
       default:
         document.getElementById("lightToggleIcon").style.display = "none";
-        document.getElementById("darkToggleIcon").style.display = "block";
+        document.getElementById("darkToggleIcon").style.display = "initial";
         document.querySelectorAll('body').forEach((el) => {
           el.classList.remove('theme-light');
           el.classList.add('theme-dark');
