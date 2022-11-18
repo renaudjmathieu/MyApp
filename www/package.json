@@ -1,5 +1,5 @@
 {
-  "name": "my-website",
+  "name": "my-web-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/renaudjmathieu/my-website.git"
+    "url": "git+ssh://git@github.com/renaudjmathieu/my-web-app.git"
   },
   "author": "Renaud Mathieu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/renaudjmathieu/my-website/issues"
+    "url": "https://github.com/renaudjmathieu/my-web-app/issues"
   },
-  "homepage": "https://github.com/renaudjmathieu/my-website#readme",
+  "homepage": "https://github.com/renaudjmathieu/my-web-app#readme",
   "dependencies": {
     "@svgr/webpack": "^6.5.1",
     "@types/jest": "^29.2.3",

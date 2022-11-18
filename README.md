@@ -1,4 +1,4 @@
-#  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-website/main/www/src/img/elephant.svg" width="70">My website</a>
+#  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/www/src/img/elephant.svg" width="70">My website</a>
 
 
 Website to try some stuff I learn (dev, ml, bi, etc.).
@@ -13,7 +13,7 @@ Install the necessary packages by following these steps:
 
 In the Terminal, go to the `www` folder:
 ```	
-cd my-website
+cd my-web-app
 cd www
 ```	
 Install the necessary packages
@@ -27,7 +27,7 @@ Runs the app in development mode by following these steps:
 
 In the Terminal, go to the `www` folder:
 ```	
-cd my-website
+cd my-web-app
 cd www
 ```	
 Run the app in the development mode: 
@@ -43,7 +43,7 @@ Run the Azure Functions project locally by following these steps:
 
 In the Terminal, go to the `api` folder:
 ```	
-cd my-website
+cd my-web-app
 cd www
 cd api
 ```	
