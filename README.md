@@ -1,4 +1,4 @@
-#  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/www/src/img/elephant.svg" width="70">My website</a>
+#  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/www/src/img/elephant.svg" width="70">My web app</a>
 
 
 Web app to try some stuff I learn (dev, ml, bi, etc.).
@@ -66,7 +66,7 @@ Run the frontend app and API together by starting the app with the Static Web Ap
 
 Running the two parts of your application this way allows the CLI to serve your frontend's build output from a folder, and makes the APIs accessible to the running app.
 
-*See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) and the [Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/) website for more information.*
+*See [this section](https://learn.microsoft.com/en-us/azure/static-web-apps/add-api?tabs=vanilla-javascript#run-the-frontend-and-api-locally) of the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview) and the [Static Web Apps CLI](https://azure.github.io/static-web-apps-cli/) web app for more information.*
 
 ### `npm run start`
 
@@ -76,21 +76,21 @@ Automatically runs the following script commands :
 
 ## :teacher: Learn More
 
-To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www.azurestaticwebapps.dev/) website, the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
+To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www.azurestaticwebapps.dev/) web app, the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
 
 To learn **React**, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
 
-This website was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article from [Prateek Srivastava](https://medium.com/@prateeksrt) on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
+This web app was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article from [Prateek Srivastava](https://medium.com/@prateeksrt) on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
 
 Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
 
 ## :judge: Attributions
 
-This website makes uses of open data from the [STM](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
+This web app makes uses of open data from the [STM](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This website was built using these products :
+This web app was built using these products :
 
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 [<img src="https://ms-azuretools.gallerycdn.vsassets.io/extensions/ms-azuretools/vscode-azurestaticwebapps/0.11.3/1665693006913/Microsoft.VisualStudio.Services.Icons.Default" width="50">][azure-static-web-apps]
