@@ -4,12 +4,11 @@ import Dropdown from 'react-bootstrap/Dropdown';
 const Auth = (props) => {
 
   const providers = [
-    { name: 'Azure AD', value: 'aad' },
     { name: 'Facebook', value: 'facebook' },
     { name: 'Google', value: 'google' },
     { name: 'Github', value: 'github' },
+    { name: 'Microsoft', value: 'aad' },
     { name: 'Twitter', value: 'twitter' },
-    { name: 'Email', value: 'local' },
   ];
 
   const redirect = window.location.pathname;

@@ -1,11 +1,6 @@
 import './powerbi.css';
 import '../pages.css';
-import * as React from "react";
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-
-let Logo = "https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg";
 
 interface ReportProps {
   title: string;

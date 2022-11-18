@@ -24,8 +24,8 @@ const NavBar = (props) => {
             <NavLink className="nav-link" to="/">
               Renaud Mathieu
             </NavLink>
-            <NavLink className="nav-link" to="/hello">
-              Hello
+            <NavLink className="nav-link" to="/azurefunctions">
+              Azure Functions
             </NavLink>
             <NavLink className="nav-link" to="/pbi">
               Power BI

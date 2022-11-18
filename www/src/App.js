@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import {
-  Home,
+  Home
 } from "./pages";
-import Hello from './pages/hello'; //stupid webpack bug in GitHub actions (Oryx) so I have to import this way.
 import {
   NavBar,
   Footer,
 } from "./components";
+import AzureFunctions from './pages/AzureFunctions';
 import PowerBI from './pages/PowerBI';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
@@ -61,7 +61,7 @@ function App() {
           toggleColorMode={colorMode.toggleColorMode} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/hello" element={<Hello />} />
+          <Route path="/azurefunctions" element={<AzureFunctions />} />
           <Route path="/pbi" element={<PowerBI />} />
         </Routes>
       </Router>
