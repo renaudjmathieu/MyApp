@@ -84,8 +84,6 @@ This website was built from scratch, without using <code>create-react-app</code>
 
 Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
 
-Check out [Session 25](https://powerbidevcamp.powerappsportals.com/sessions/session25/) and [Session 26](https://powerbidevcamp.powerappsportals.com/sessions/session26/) from the [Power BI Dev Camp](https://www.powerbidevcamp.net/) website to learn all about Power BI embedding in React. Also, take a look at the [Power BI Embedded Analytics Playground](https://playground.powerbi.com/) website for examples on how you can use [Power BI Embedded](https://azure.microsoft.com/en-us/products/power-bi-embedded/) in your applications.
-
 ## :judge: Attributions
 
 This website makes uses of open data from the [STM](https://www.stm.info/en/about/developers), which is available under a [Creative Commons – Attribution 4.0 CC-BY](https://creativecommons.org/licenses/by/4.0) licence.

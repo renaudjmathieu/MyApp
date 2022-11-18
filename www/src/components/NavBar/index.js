@@ -28,7 +28,7 @@ const NavBar = (props) => {
               Hello
             </NavLink>
             <NavLink className="nav-link" to="/pbi">
-              PowerBI
+              Power BI
             </NavLink>
           </Nav>
           <Nav className={clsx('navRight', styles.navRight)}>
