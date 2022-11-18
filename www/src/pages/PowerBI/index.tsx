@@ -22,7 +22,7 @@ export default class PowerBI extends React.Component<{}> {
               <Row className="justify-content-md-center">
                 <Col>
                   <div className="text-center">
-                    <img height="250" src={Logo} title="logo" />
+                    <img height="500" src={Logo} title="logo" />
                   </div>
                 </Col>
               </Row>
