@@ -70,7 +70,7 @@ Running the two parts of your application this way allows the CLI to serve your 
 
 ### `npm run start`
 
-Run the following script commands : 
+Automatically runs the following script commands : 
 1. <code>npm run build</code>
 2. <code>swa start ./dist --api-location ./api</code>
 
