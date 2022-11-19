@@ -80,9 +80,13 @@ To learn **Azure Static Web Apps**, check out the [Static Web Apps!](https://www
 
 To learn **React**, check out the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [React documentation](https://reactjs.org/).
 
-This web app was built from scratch, without using <code>create-react-app</code> and by configuring Webpack and Babel manually. For more infos, check out this article from [Prateek Srivastava](https://medium.com/@prateeksrt) on how to [setup React with Webpack and Babel](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9).
+This web app was built from scratch, without using <code>create-react-app</code> and by configuring **Webpack** and **Babel** manually. For more info on how to set it up, check out [this article](https://medium.com/age-of-awareness/setup-react-with-webpack-and-babel-5114a14a47e9) from [Prateek Srivastava](https://medium.com/@prateeksrt).
 
-Check out this article from [FAM](https://famzil.medium.com) to learn how to make a [Dark Mode in React](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) and how to switch from dark to light mode.
+To learn how to implement **light and dark modes** in React, check out [this article](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) from [FAM](https://famzil.medium.com).
+
+To learn how to use **localStorage** with **React Hooks**, check out [this article](https://blog.logrocket.com/using-localstorage-react-hooks/) from [Ibadehin Mojeed](https://blog.logrocket.com/author/ibadehinmojeed/).
+
+To learn how to use **Redux**, check out the [Redux](https://redux.js.org), [React Redux](https://react-redux.js.org) and [Redux Toolkit](https://redux-toolkit.js.org) websites.
 
 ## :judge: Attributions
 
@@ -98,6 +102,7 @@ This web app was built using these products :
 [<img src="https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg" width="110">][babel]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
 [<img src="https://react-bootstrap.github.io/logo.svg" width="45">][react-bootstrap]
+[<img src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg" width="50">][redux]
 
 [powerbi]: https://powerbi.microsoft.com/en-us/
 [azure-static-web-apps]: https://azure.microsoft.com/en-us/products/app-service/static/
@@ -105,3 +110,4 @@ This web app was built using these products :
 [babel]: https://babeljs.io
 [react]: https://reactjs.org
 [react-bootstrap]: https://react-bootstrap.github.io/
+[redux]: https://redux.js.org

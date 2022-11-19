@@ -1,8 +1,8 @@
-import './powerbi.css';
+import './styles.css';
 import '../pages.css';
 import Container from 'react-bootstrap/Container';
 
-interface ReportProps {
+interface ReportIFrame {
   title: string;
   src: string;
   frameBorder: number;
@@ -11,7 +11,7 @@ interface ReportProps {
 
 const PowerBI = () => {
 
-  const reports: ReportProps[] = [
+  const reports: ReportIFrame[] = [
     {
       title: "Test - Page 1",
       src: "https://app.powerbi.com/view?r=eyJrIjoiMTFiOWY5ODEtZmMzNi00NTJhLWE2Y2ItYThmYjVjNjQ1YjI4IiwidCI6IjEwMDMzY2FmLWZlYzAtNGRhMS1hZDdiLTcyY2ZhZTVlOTQwNiJ9",

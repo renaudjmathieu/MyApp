@@ -1,4 +1,4 @@
-import './azurefunctions.css';
+import './styles.css';
 import '../pages.css';
 import { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';

@@ -8,6 +8,7 @@ import {
   Footer,
 } from "./components";
 import AzureFunctions from './pages/AzureFunctions';
+import ReduxPage from './pages/ReduxPage';
 import PowerBI from './pages/PowerBI';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
@@ -62,6 +63,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/azurefunctions" element={<AzureFunctions />} />
+          <Route path="/reduxpage" element={<ReduxPage />} />
           <Route path="/pbi" element={<PowerBI />} />
         </Routes>
       </Router>

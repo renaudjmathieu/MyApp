@@ -27,6 +27,9 @@ const NavBar = (props) => {
             <NavLink className="nav-link" to="/azurefunctions">
               Azure Functions
             </NavLink>
+            <NavLink className="nav-link" to="/reduxpage">
+              Redux
+            </NavLink>
             <NavLink className="nav-link" to="/pbi">
               Power BI
             </NavLink>
