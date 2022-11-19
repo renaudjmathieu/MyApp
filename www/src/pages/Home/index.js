@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './styles.module.css';
-import '../pages.css';
+import '../styles.css';
 import clsx from 'clsx';
 import ElephantSvg from '../../img/elephant.svg';
 import WebDevelopmentSvg from '../../img/web.svg';

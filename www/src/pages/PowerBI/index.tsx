@@ -1,5 +1,5 @@
 import './styles.css';
-import '../pages.css';
+import '../styles.css';
 import Container from 'react-bootstrap/Container';
 
 interface ReportIFrame {
@@ -30,7 +30,7 @@ const PowerBI = () => {
       <main>
         {reports.map((report, index) => (
           <section className="features">
-            <iframe className="iframe"
+            <iframe className="powerbiiframe"
               title={report.title}
               src={report.src}
               frameBorder={report.frameBorder}

@@ -1,5 +1,5 @@
 import './styles.css';
-import '../pages.css';
+import '../styles.css';
 import { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 
@@ -23,9 +23,10 @@ const AzureFunctions = () => {
       <main>
         <Container>
           <section className="features">
-            <p>
-              {data.split('/n').map((item, i) => <span key={i}>{item}<br /></span>)}
-            </p>
+            {data.split('/n').map((item, i) =>
+              <svg className='featureSvg' width="100%" height="100%" role="img">
+                <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill='#123456'>{item}</text>
+              </svg>)}
           </section>
         </Container>
       </main>

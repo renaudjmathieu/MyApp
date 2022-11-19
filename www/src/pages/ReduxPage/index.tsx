@@ -1,5 +1,5 @@
 import './styles.css';
-import '../pages.css';
+import '../styles.css';
 import { useState } from "react";
 import { Pokemon } from '../../components/Pokemon'
 import Container from 'react-bootstrap/Container';
@@ -18,16 +18,8 @@ const ReduxPage = () => {
         </Container>
       </header>
       <main>
-      <Container>
+        <Container>
           <section className="features">
-            <select
-              onChange={(change) => setPollingInterval(Number(change.target.value))}
-              title="Polling Interval"
-            >
-              <option value={0}>Off</option>
-              <option value={1000}>1s</option>
-              <option value={5000}>5s</option>
-            </select>
             <Row>
               {pokemon.map((poke, index) => (
                 <Pokemon key={index} name={poke} pollingInterval={pollingInterval} />
