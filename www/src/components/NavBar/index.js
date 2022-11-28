@@ -30,6 +30,9 @@ const NavBar = (props) => {
             <NavLink className="nav-link" to="/reduxpage">
               Redux
             </NavLink>
+            <NavLink className="nav-link" to="/d3">
+              D3
+            </NavLink>
             <NavLink className="nav-link" to="/kaggle">
               Kaggle
             </NavLink>

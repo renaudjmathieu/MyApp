@@ -8,6 +8,7 @@ import {
   Footer,
 } from "./components";
 import AzureFunctions from './pages/AzureFunctions';
+import D3 from './pages/D3';
 import ReduxPage from './pages/ReduxPage';
 import Kaggle from './pages/Kaggle';
 import PowerBI from './pages/PowerBI';
@@ -65,6 +66,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/azurefunctions" element={<AzureFunctions />} />
           <Route path="/reduxpage" element={<ReduxPage />} />
+          <Route path="/d3" element={<D3 />} />
           <Route path="/kaggle" element={<Kaggle />} />
           <Route path="/pbi" element={<PowerBI />} />
         </Routes>
