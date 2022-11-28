@@ -11,6 +11,9 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   entry: `${srcDir}/index.tsx`,
   resolve: {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
