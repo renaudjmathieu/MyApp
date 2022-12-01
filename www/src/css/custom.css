@@ -257,3 +257,11 @@
 .theme-dark .card-text {
     color: var(--dark-color);
 }
+
+.theme-light .link {
+    color: var(--theme-light-color-primary);
+}
+
+.theme-dark .link {
+    color: var(--theme-dark-color-primary);
+}
