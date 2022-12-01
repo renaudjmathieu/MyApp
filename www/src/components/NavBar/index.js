@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import styles from './styles.module.css';
 import clsx from 'clsx';
@@ -12,6 +12,26 @@ import Navbar from 'react-bootstrap/Navbar';
 import Auth from '../NavbarItems/Auth';
 
 const NavBar = (props) => {
+  const [userInfo, setUserInfo] = useState();
+
+  useEffect(() => {
+    (async () => {
+      setUserInfo(await getUserInfo());
+    })();
+  }, []);
+
+  async function getUserInfo() {
+    try {
+      const response = await fetch('/.auth/me');
+      const payload = await response.json();
+      const { clientPrincipal } = payload;
+      return clientPrincipal;
+    } catch (error) {
+      console.error('No profile could be found');
+      return undefined;
+    }
+  }
+
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container fluid>
@@ -24,21 +44,22 @@ const NavBar = (props) => {
             <NavLink className="nav-link" to="/">
               Renaud Mathieu
             </NavLink>
-            <NavLink className="nav-link" to="/azurefunctions">
-              Azure Functions
-            </NavLink>
-            <NavLink className="nav-link" to="/reduxpage">
-              Redux
-            </NavLink>
-            <NavLink className="nav-link" to="/d3">
-              D3
-            </NavLink>
-            <NavLink className="nav-link" to="/kaggle">
-              Kaggle
-            </NavLink>
-            <NavLink className="nav-link" to="/pbi">
-              Power BI
-            </NavLink>
+            <NavLink className="nav-link" to="/projects">
+                Projects
+              </NavLink>
+            {userInfo ? <>
+              <NavLink className="nav-link" to="/azurefunctions">
+                Azure Functions
+              </NavLink>
+              <NavLink className="nav-link" to="/reduxpage">
+                Redux
+              </NavLink>
+              <NavLink className="nav-link" to="/kaggle">
+                Kaggle
+              </NavLink>
+              <NavLink className="nav-link" to="/pbi">
+                Power BI
+              </NavLink></> : <></>}
           </Nav>
           <Nav className={clsx('navRight', styles.navRight)}>
             <Auth />

@@ -1,11 +1,23 @@
 {
   "routes": [
     {
-      "route": "/whatever",
+      "route": "/azurefunctions",
       "allowedRoles": ["authenticated"]
     },
     {
-      "route": "/ehhh/*",
+      "route": "/reduxpage/*",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/d3/*",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/kaggle/*",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/pbi/*",
       "allowedRoles": ["authenticated"]
     }
   ],

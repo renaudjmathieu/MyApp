@@ -102,8 +102,7 @@ This web app was built using these products :
 [<img src="https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg" width="110">][babel]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
 [<img src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg" width="50">][redux]
-[<img src="https://mui.com/static/logo.png" width="50">][mui]
-[<img src="https://emotion.sh/logo-96x96.png" width="45">][emotion]
+[<img src="https://react-bootstrap.github.io/logo.svg" width="50">][react-bootstrap]
 [<img src="https://www.kaggle.com/static/images/site-logo.svg" width="100">][kaggle]
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 
@@ -112,7 +111,6 @@ This web app was built using these products :
 [babel]: https://babeljs.io
 [react]: https://reactjs.org
 [redux]: https://redux.js.org
-[mui]: https://mui.com/
-[emotion]: https://emotion.sh/
+[react-bootstrap]: https://react-bootstrap.github.io/
 [kaggle]: https://www.kaggle.com/
 [powerbi]: https://powerbi.microsoft.com/en-us/

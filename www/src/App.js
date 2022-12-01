@@ -8,7 +8,7 @@ import {
   Footer,
 } from "./components";
 import AzureFunctions from './pages/AzureFunctions';
-import D3 from './pages/D3';
+import Projects from './pages/Projects';
 import ReduxPage from './pages/ReduxPage';
 import Kaggle from './pages/Kaggle';
 import PowerBI from './pages/PowerBI';
@@ -64,9 +64,9 @@ function App() {
           toggleColorMode={colorMode.toggleColorMode} />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/azurefunctions" element={<AzureFunctions />} />
           <Route path="/reduxpage" element={<ReduxPage />} />
-          <Route path="/d3" element={<D3 />} />
           <Route path="/kaggle" element={<Kaggle />} />
           <Route path="/pbi" element={<PowerBI />} />
         </Routes>
