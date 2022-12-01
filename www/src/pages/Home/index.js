@@ -35,7 +35,7 @@ const FeatureList = [
     ),
     text2: (
       <>
-        I also have strong data analytics, engineering and architecturing skills. Cloud and On-prem.
+        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in like all of the Microsoft BI stuff.
       </>
     ),
   },
