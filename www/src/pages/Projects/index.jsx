@@ -26,7 +26,7 @@ function Projects() {
                   <Card.Text>
                     A simple web app for Data Vizualization built with D3, React, Webpack and Azure Static Web Apps.
                   </Card.Text>
-                  <Card.Link href="https://red-dune-0c424950f.2.azurestaticapps.net/" target="_blank">Live</Card.Link>
+                  <Card.Link href="https://red-dune-0c424950f.2.azurestaticapps.net/" target="_blank">Demo</Card.Link>
                   <Card.Link href="https://github.com/renaudjmathieu/data-visualization-d3-react" target="_blank">GitHub</Card.Link>
                 </Card.Body>
               </Card></Col>
