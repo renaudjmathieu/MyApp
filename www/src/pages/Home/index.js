@@ -16,12 +16,12 @@ const FeatureList = [
     Svg: WebDevelopmentSvg,
     text1: (
       <>
-        I started my IT career as a web developer and I've keep at it on and off over the years.
+        I started my IT career as a web developer and I have been keeping at it on and off ever since.
       </>
     ),
     text2: (
       <>
-        Nowadays, I have strong interests in React and D3 and I really need to learn wtf Svelte is.
+        Nowadays, I mostly do React and I also have a strong interest in D3 and data viz on the web.
       </>
     ),
   },
