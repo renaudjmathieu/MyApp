@@ -30,12 +30,12 @@ const FeatureList = [
     Svg: BusinessIntelligenceSvg,
     text1: (
       <>
-        I've done BI dev since 2012 and I'm a bona fide expert at report making and SQL at this point.
+        I've done BI dev since 2012 and I'm a bona fide expert at SQL and making reports at this point.
       </>
     ),
     text2: (
       <>
-        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in like all of the Microsoft BI stuff.
+        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in like all of the Microsoft BI tools.
       </>
     ),
   },
@@ -44,12 +44,12 @@ const FeatureList = [
     Svg: MachineLearningSvg,
     text1: (
       <>
-        I'm really not bad at all in Python and company (Pandas, Scikit-learn, Beautiful Soup, etc.).
+        I'm pretty good in Python and the data science stuff (Pandas, Scikit-learn, Beautiful Soup, etc.).
       </>
     ),
     text2: (
       <>
-        I'm also learning and in 💛 with all things Deep Learning (NLP, Computer Vision, GANs, etc.).
+        I'm actively learning and in 💛 with all things Deep Learning (NLP, Computer Vision, GANs, etc.).
       </>
     ),
   },

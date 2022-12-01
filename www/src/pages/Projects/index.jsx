@@ -13,7 +13,7 @@ function Projects() {
     <div class="main-wrapper">
       <header className="banner">
         <Container>
-          <h1>Projects</h1>
+          <h1>Stuff</h1>
         </Container>
       </header>
       <main>
