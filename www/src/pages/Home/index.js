@@ -21,7 +21,7 @@ const FeatureList = [
     ),
     text2: (
       <>
-        Nowadays, I have a strong interests in React and D3.js and I really need to learn wtf Svelte is.
+        Nowadays, I have strong interests in React and D3 and I really need to learn wtf Svelte is.
       </>
     ),
   },
@@ -30,7 +30,7 @@ const FeatureList = [
     Svg: BusinessIntelligenceSvg,
     text1: (
       <>
-        I've been doing BI for a decade and I'm a bona fide expert at SQL and making reports at this point.
+        I've been doing BI for a decade and I'm a bona fide expert in SQL and making reports at this point.
       </>
     ),
     text2: (
@@ -49,7 +49,7 @@ const FeatureList = [
     ),
     text2: (
       <>
-        These days, I'm learning and 💛 all things Deep Learning (NLP, Computer Vision, GANs, etc.).
+        Currently, I'm learning and 💛 all things Deep Learning (NLP, Computer Vision, GANs, etc.).
       </>
     ),
   },
