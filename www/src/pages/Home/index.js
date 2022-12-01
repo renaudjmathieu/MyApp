@@ -49,7 +49,7 @@ const FeatureList = [
     ),
     text2: (
       <>
-        I'm currently learning and in 💛 with all things Deep Learning (NLP, Computer Vision, GANs, etc.).
+        I'm also learning and in 💛 with all things Deep Learning (NLP, Computer Vision, GANs, etc.).
       </>
     ),
   },
