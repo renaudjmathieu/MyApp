@@ -16,7 +16,7 @@ const FeatureList = [
     Svg: WebDevelopmentSvg,
     text1: (
       <>
-        I've started my IT career as a web developer and I've keep at it on and off over the years.
+        I started my IT career as a web developer and I've keep at it on and off over the years.
       </>
     ),
     text2: (
@@ -30,7 +30,7 @@ const FeatureList = [
     Svg: BusinessIntelligenceSvg,
     text1: (
       <>
-        I've done BI dev since 2012 and I'm a bona fide expert at SQL and making reports at this point.
+        I've been doing BI for a decade and I'm a bona fide expert at SQL and making reports at this point.
       </>
     ),
     text2: (
