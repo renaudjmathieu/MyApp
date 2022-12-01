@@ -58,9 +58,21 @@
   width: 100%;
 }
 
+.features p {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 991px) {
+  .features p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
 .featureSvg {
-  height: 14vmin;
-  width: 14vmin;
+  height: 12vmin;
+  width: 12vmin;
   margin-top: 1vmin;
   margin-bottom: 2vmin;
 }

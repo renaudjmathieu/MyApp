@@ -63,7 +63,7 @@ const NavBar = (props) => {
           </Nav>
           <Nav className={clsx('navRight', styles.navRight)}>
             <Auth />
-            <a href="https://github.com/renaudjmathieu/my-web-app" target="_blank" className={styles.imgLink} rel="noreferrer" aria-label="GitHub repository">
+            <a href="https://github.com/renaudjmathieu" target="_blank" className={styles.imgLink} rel="noreferrer" aria-label="GitHub">
               <GitHubSvg className={clsx(styles.headerSvg, 'headerSvg')} alt="GitHub logo" />
             </a>
             <a href="#" className={styles.imgLink} onClick={() => {

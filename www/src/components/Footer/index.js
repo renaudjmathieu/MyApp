@@ -7,7 +7,7 @@ function Footer() {
     <footer class="py-5">
         <Container>
           <p class="m-0 text-center">
-            Copyright © {new Date().getFullYear()} Renaud Mathieu. Montreal, Canada.
+            © Renaud Mathieu, Montreal Canada
           </p>
         </Container>
     </footer>
