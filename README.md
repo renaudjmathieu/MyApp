@@ -1,7 +1,7 @@
 #  <a href="https://www.renaudjmathieu.com"><img src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/www/src/img/elephant.svg" width="70">My web app</a>
 
 
-Web app to try some stuff I learn (dev, ml, bi, etc.).
+Web app to show some stuff I learn (dev, ml, bi, etc.).
 
 ## :technologist: Available Script Commands
 
@@ -101,8 +101,8 @@ This web app was built using these products :
 [<img src="https://raw.githubusercontent.com/webpack/media/master/logo/icon-square-big.png" width="50">][webpack]
 [<img src="https://d33wubrfki0l68.cloudfront.net/7a197cfe44548cc1a3f581152af70a3051e11671/78df8/img/babel.svg" width="110">][babel]
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png" width="50">][react]
-[<img src="https://react-bootstrap.github.io/logo.svg" width="45">][react-bootstrap]
 [<img src="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg" width="50">][redux]
+[<img src="https://react-bootstrap.github.io/logo.svg" width="50">][react-bootstrap]
 [<img src="https://www.kaggle.com/static/images/site-logo.svg" width="100">][kaggle]
 [<img src="https://powerapps.microsoft.com/images/application-logos/svg/powerbi.svg" width="50">][powerbi]
 
@@ -110,7 +110,7 @@ This web app was built using these products :
 [webpack]: https://webpack.js.org
 [babel]: https://babeljs.io
 [react]: https://reactjs.org
-[react-bootstrap]: https://react-bootstrap.github.io/
 [redux]: https://redux.js.org
+[react-bootstrap]: https://react-bootstrap.github.io/
 [kaggle]: https://www.kaggle.com/
 [powerbi]: https://powerbi.microsoft.com/en-us/

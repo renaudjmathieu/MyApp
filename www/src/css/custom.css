@@ -241,3 +241,19 @@
         text-align: right;
     }
 }
+
+.theme-light .card-title {
+    color: var(--dark-color);
+}
+
+.theme-dark .card-title {
+    color: var(--dark-color);
+}
+
+.theme-light .card-text {
+    color: var(--dark-color);
+}
+
+.theme-dark .card-text {
+    color: var(--dark-color);
+}

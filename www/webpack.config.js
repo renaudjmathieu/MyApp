@@ -11,6 +11,9 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   entry: `${srcDir}/index.tsx`,
   resolve: {
     extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
@@ -21,7 +24,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.?js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
