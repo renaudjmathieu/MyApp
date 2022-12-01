@@ -14,33 +14,48 @@ const FeatureList = [
   {
     title: 'Web Development',
     Svg: WebDevelopmentSvg,
-    text: (
+    text1: (
       <>
-        Web development is the work involved in developing and deploying a website or web app.
+        I've started my IT career as a web developer and I've keep at it on and off over the years.
       </>
     ),
-  },
-  {
-    title: 'Machine Learning (ML)',
-    Svg: MachineLearningSvg,
-    text: (
+    text2: (
       <>
-        ML is a subset of artificial intelligence devoted to understanding and building methods that learn.
+        Nowadays, I have a strong interest in React and D3.js and I really need to learn wtf Svelte is.
       </>
     ),
   },
   {
     title: 'Business Intelligence (BI)',
     Svg: BusinessIntelligenceSvg,
-    text: (
+    text1: (
       <>
-        BI comprises the strategies and technologies used for the data analysis of business information.
+        I've done BI dev since 2012 and I'm a bona fide expert at report making and SQL at this point.
+      </>
+    ),
+    text2: (
+      <>
+        I also have strong data analytics, engineering and architecturing skills. Cloud and On-prem.
+      </>
+    ),
+  },
+  {
+    title: 'Machine Learning (ML)',
+    Svg: MachineLearningSvg,
+    text1: (
+      <>
+        I'm really not bad at all in Python and company (Pandas, Scikit-learn, Beautiful Soup, etc.).
+      </>
+    ),
+    text2: (
+      <>
+        I'm currently learning and in 💛 with all things Deep Learning (NLP, Computer Vision, GANs, etc.).
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, text }) {
+function Feature({ Svg, title, text1, text2 }) {
   return (
     <Col lg={4} >
       <div className="text-center">
@@ -48,7 +63,8 @@ function Feature({ Svg, title, text }) {
       </div>
       <div className="text-center px-md-4">
         <h5>{title}</h5>
-        <p>{text}</p>
+        <p>{text1}</p>
+        <p>{text2}</p>
       </div>
     </Col>
 
