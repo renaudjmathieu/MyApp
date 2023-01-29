@@ -266,11 +266,7 @@
     color: var(--theme-dark-color-primary);
 }
 
-.theme-light .dumbLink {
-    color: var(--theme-light-color-primary);
-}
-
-.theme-dark .dumbLink {
+.dumbLink {
     color: #000
 }
 
