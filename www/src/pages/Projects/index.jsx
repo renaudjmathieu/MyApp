@@ -23,9 +23,8 @@ function Projects() {
               <Col lg={12} ><Card style={{ width: '24rem' }}>
                 <Card.Body>
                   <Card.Title>Data Visualization with D3 and React</Card.Title>
-                  <Card.Img variant="top" src="https://raw.githubusercontent.com/renaudjmathieu/data-visualization-d3-react/master/project1.png" />
+                  <Card.Img variant="top" className="project-image" src="https://raw.githubusercontent.com/renaudjmathieu/my-web-app/main/www/src/img/project1.png" />
                   <Card.Text>
-                  <br />
                     A dynamic dashboard build with D3 and React able to show different charts to visualize different kind of data.
                   </Card.Text>
                   <Card.Link className="dumbLink" href="https://red-dune-0c424950f.2.azurestaticapps.net/" target="_blank">Demo</Card.Link>

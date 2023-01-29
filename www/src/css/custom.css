@@ -285,3 +285,8 @@
 .theme-light {
     background-color: #f8f9fa;
 }
+
+.project-image {
+    padding-top: 8px;
+    padding-bottom: 20px;
+}
