@@ -45,7 +45,7 @@ const NavBar = (props) => {
               Renaud Mathieu
             </NavLink>
             <NavLink className="nav-link" to="/projects">
-                Stuff
+                Projects
               </NavLink>
             {userInfo ? <>
               <NavLink className="nav-link" to="/azurefunctions">

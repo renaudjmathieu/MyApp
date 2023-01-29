@@ -36,7 +36,7 @@ function App() {
       case "light":
         document.getElementById("lightToggleIcon").style.display = "initial";
         document.getElementById("darkToggleIcon").style.display = "none";
-        document.querySelectorAll('body').forEach((el) => {
+        document.querySelectorAll('html').forEach((el) => {
           el.classList.add('theme-light');
           el.classList.remove('theme-dark');
         });
@@ -46,7 +46,7 @@ function App() {
       default:
         document.getElementById("lightToggleIcon").style.display = "none";
         document.getElementById("darkToggleIcon").style.display = "initial";
-        document.querySelectorAll('body').forEach((el) => {
+        document.querySelectorAll('html').forEach((el) => {
           el.classList.remove('theme-light');
           el.classList.add('theme-dark');
         });
@@ -71,7 +71,6 @@ function App() {
           <Route path="/pbi" element={<PowerBI />} />
         </Routes>
       </Router>
-      <Footer />
     </ColorModeContext.Provider>
   );
 }

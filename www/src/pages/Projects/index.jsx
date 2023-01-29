@@ -13,21 +13,23 @@ function Projects() {
     <div class="main-wrapper">
       <header className="banner">
         <Container>
-          <h1>Stuff</h1>
+          <h1>Projects</h1>
         </Container>
       </header>
       <main>
         <Container>
           <section className={styles.features}>
             <Row>
-              <Col lg={12} ><Card style={{ width: '18rem' }}>
+              <Col lg={12} ><Card style={{ width: '24rem' }}>
                 <Card.Body>
                   <Card.Title>Data Visualization with D3 and React</Card.Title>
+                  <Card.Img variant="top" src="https://raw.githubusercontent.com/renaudjmathieu/data-visualization-d3-react/master/project1.png" />
                   <Card.Text>
-                    A simple web app for Data Vizualization built with D3, React, Webpack and Azure Static Web Apps.
+                  <br />
+                    A dynamic dashboard build with D3 and React able to show different charts to visualize different kind of data.
                   </Card.Text>
-                  <Card.Link className="link" href="https://red-dune-0c424950f.2.azurestaticapps.net/" target="_blank">Demo</Card.Link>
-                  <Card.Link className="link" href="https://github.com/renaudjmathieu/data-visualization-d3-react" target="_blank">GitHub</Card.Link>
+                  <Card.Link className="dumbLink" href="https://red-dune-0c424950f.2.azurestaticapps.net/" target="_blank">Demo</Card.Link>
+                  <Card.Link className="dumbLink" href="https://github.com/renaudjmathieu/data-visualization-d3-react" target="_blank">GitHub</Card.Link>
                 </Card.Body>
               </Card></Col>
             </Row>

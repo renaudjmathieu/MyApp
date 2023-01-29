@@ -9,6 +9,7 @@ import BusinessIntelligenceSvg from '../../img/bi.svg';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Footer from '../../components/Footer';
 
 const FeatureList = [
   {
@@ -59,7 +60,7 @@ function Feature({ Svg, title, text1, text2 }) {
   return (
     <Col lg={4} >
       <div className="text-center">
-      <Svg className={clsx(styles.featureSvg, 'featureSvg')} role="img" />
+        <Svg className={clsx(styles.featureSvg, 'featureSvg')} role="img" />
       </div>
       <div className="text-center px-md-4">
         <h5>{title}</h5>
@@ -73,26 +74,29 @@ function Feature({ Svg, title, text1, text2 }) {
 
 function Home() {
   return (
-    <div class="main-wrapper">
-      <header className="banner">
-        <Container>
-          <h1>Renaud Mathieu</h1>
-          <ElephantSvg className={clsx(styles.bannerSvg, 'bannerSvg')} role="img" />
-        </Container>
-      </header>
-      <main>
-        <Container>
-          <section className={styles.features}>
-            <Row>
-              {FeatureList.map((props, idx) => (
-                <Feature key={idx} {...props} />
-              ))}
+    <>
+      <div class="main-wrapper">
+        <header className="banner">
+          <Container>
+            <h1>Renaud Mathieu</h1>
+            <ElephantSvg className={clsx(styles.bannerSvg, 'bannerSvg')} role="img" />
+          </Container>
+        </header>
+        <main>
+          <Container>
+            <section className={styles.features}>
+              <Row>
+                {FeatureList.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
 
-            </Row>
-          </section>
-        </Container>
-      </main>
-    </div>
+              </Row>
+            </section>
+          </Container>
+        </main>
+      </div>
+      <Footer />
+    </>
   );
 }
 

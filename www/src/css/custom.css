@@ -265,3 +265,23 @@
 .theme-dark .link {
     color: var(--theme-dark-color-primary);
 }
+
+.theme-light .dumbLink {
+    color: var(--theme-light-color-primary);
+}
+
+.theme-dark .dumbLink {
+    color: #000
+}
+
+#dropdown-basic {
+    visibility: hidden;
+}
+
+.theme-dark {
+    background-color: #212529;
+}
+
+.theme-light {
+    background-color: #f8f9fa;
+}
