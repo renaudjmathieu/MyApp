@@ -1,11 +1,13 @@
 import React from "react"
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
 import WebDevelopmentSvg from '../../../img/web.svg';
 import MachineLearningSvg from '../../../img/ml.svg';
 import BusinessIntelligenceSvg from '../../../img/bi.svg';
 
 import "./HomeHeader.css"
 
-const FeatureList = [
+const itemList = [
   {
     title: 'Web Development',
     Svg: WebDevelopmentSvg,
@@ -44,47 +46,45 @@ const FeatureList = [
     ),
     text2: (
       <>
-        Currently, I'm learning and 💛 all things Deep Learning (NLP, Computer Vision, GANs, etc.).
+        Currently, I'm learning and 💛 all things Deep Learning (RNNs, GANs, Transformers, etc.).
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, text1, text2 }) {
+function Item({ Svg, title, text1, text2 }) {
   return (
-    <div>
-      <div className="text-center">
+    <Grid xs={4} className="HomeHeader__content__text__item">
+      <div className="HomeHeader__content__text__item__img">
         <Svg className="featureSvg" role="img" />
       </div>
-      <div className="text-center px-md-4">
+      <div className="HomeHeader__content__text__item__desc">
         <h5>{title}</h5>
         <p>{text1}</p>
         <p>{text2}</p>
       </div>
-    </div>
-
+    </Grid>
   );
 }
 
 const HomeHeader = () => (
   <>
-    <div>
-      <div>
-        <div>
-          <div>Hi, I’m</div>
-          <h1>Renaud Mathieu</h1>
-          <div>
-            <section className="featureSvg">
-              <div>
-                {FeatureList.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
+    <div className="HomeHeader">
 
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
+      <Box sx={{ flexGrow: 1 }} className="HomeHeader__content">
+        <Grid container spacing={2} className="HomeHeader__content__text">
+          <Grid xs={12}>
+            <div className="HomeHeader__content__text__title">
+              <span>Hi, I'm</span>
+              <h1>Renaud Mathieu</h1>
+            </div>
+
+          </Grid>
+          {itemList.map((props, idx) => (
+            <Item key={idx} {...props} />
+          ))}
+        </Grid>
+      </Box>
     </div>
   </>
 )

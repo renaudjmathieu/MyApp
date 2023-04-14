@@ -4,9 +4,9 @@ import Projects from "./../Projects/Projects"
 
 const Home = () => (
   <>
-      <div>
+      <div className="Home">
         <HomeHeader />
-        <div>
+        <div className="Home__content">
           <Projects />
         </div>
       </div>

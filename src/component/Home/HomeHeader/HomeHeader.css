@@ -1,6 +1,55 @@
-.featureSvg {
+
+.HomeHeader {
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.HomeHeader__content {
+  margin: 30vh 13em;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.HomeHeader__content__text {
+  max-width: 1200px;
+}
+
+.HomeHeader__content__text__title {
+  padding-left: 1.6em;
+}
+
+.HomeHeader__content__text__title span {
+  padding-left: 0.6em;
+}
+
+.HomeHeader__content__text__title h1 {
+  font-size: 6vw;
+  line-height: 1em;
+  margin: .2em 0 .6em;
+  font-weight: bold;
+}
+
+.HomeHeader__content__text__item {
+  text-align: center;
+  border: 1px solid red;
+}
+
+.HomeHeader__content__text__item__img svg {
   height: 12vmin;
   width: 12vmin;
   margin-top: 1vmin;
   margin-bottom: 2vmin;
+}
+
+.HomeHeader__content__text__item__desc {
+  padding: 0 1.4em 0 1.4em
+}
+
+.HomeHeader__content__text__item__desc h5 {
+  font-size: 1.2vw;
+  line-height: 1.4em;
+  margin: .2em 0 .6em;
+  font-weight: bold;
 }
