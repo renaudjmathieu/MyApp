@@ -1,9 +1,11 @@
 import React from "react"
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
-import WebDevelopmentSvg from '../../../img/web.svg';
-import MachineLearningSvg from '../../../img/ml.svg';
-import BusinessIntelligenceSvg from '../../../img/bi.svg';
+import Box from '@mui/material/Box'
+import Grid from '@mui/material/Unstable_Grid2'
+import WebDevelopmentSvg from '../../../img/web.svg'
+import MachineLearningSvg from '../../../img/ml.svg'
+import BusinessIntelligenceSvg from '../../../img/bi.svg'
+
+import Waves from '../../Waves/Waves'
 
 import "./HomeHeader.css"
 
@@ -13,7 +15,7 @@ const itemList = [
     Svg: WebDevelopmentSvg,
     text1: (
       <>
-        I started my IT career as a web developer and I have been keeping at it on and off ever since.
+        I started my IT career as a web developer and I've been keeping at it on and off ever since.
       </>
     ),
     text2: (
@@ -27,26 +29,26 @@ const itemList = [
     Svg: BusinessIntelligenceSvg,
     text1: (
       <>
-        I've been doing BI for a decade and I'm a bona fide expert in SQL and making reports at this point.
+        I've been doing BI and SQL for around a decade and produced dozens of data reports at this point.
       </>
     ),
     text2: (
       <>
-        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in like all of the Microsoft BI tools.
+        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in most Microsoft BI tools.
       </>
     ),
   },
   {
-    title: 'Machine Learning (ML)',
+    title: 'Machine Learning',
     Svg: MachineLearningSvg,
     text1: (
       <>
-        I'm pretty good in Python and the data science stuff (Pandas, Scikit-learn, Beautiful Soup, etc.).
+        I'm good with Python's data science librairies (Pandas, Scikit-learn, TensorFlow, etc.).
       </>
     ),
     text2: (
       <>
-        Currently, I'm learning and 💛 all things Deep Learning (RNNs, GANs, Transformers, etc.).
+        Currently, I'm learning Deep Learning and stuff (RNNs, GANs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
       </>
     ),
   },
@@ -70,12 +72,12 @@ function Item({ Svg, title, text1, text2 }) {
 const HomeHeader = () => (
   <>
     <div className="HomeHeader">
-
+      <Waves className="HomeHeader__waves-canvas" />
       <Box sx={{ flexGrow: 1 }} className="HomeHeader__content">
         <Grid container spacing={2} className="HomeHeader__content__text">
           <Grid xs={12}>
             <div className="HomeHeader__content__text__title">
-              <span>Hi, I'm</span>
+              <span>Hi! I'm</span>
               <h1>Renaud Mathieu</h1>
             </div>
 

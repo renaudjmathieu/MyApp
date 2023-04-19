@@ -1,0 +1,28 @@
+.Waves {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Waves__background {
+  fill: #f5f7f9;
+}
+
+@keyframes offsetCreep {
+  0% {
+    stroke-dashoffset: 0%
+  }
+
+  100% {
+    stroke-dashoffset: 100%
+  }
+}
+
+.Waves__line {
+  fill:url(#wave-gradient);
+  fill-rule:evenodd;
+  stroke-width:2px;
+  stroke: #000;
+}
