@@ -3,11 +3,14 @@ import * as d3 from "d3"
 
 import "./Waves.css"
 
-const Waves = () => {
+const Waves = ({ nameBoxProperties }) => {
   const ref = React.useRef()
 
-  const height = 600
+  const height = nameBoxProperties.top + nameBoxProperties.height
   const width = window.innerWidth
+
+  const limit1 = (nameBoxProperties.left + (nameBoxProperties.width / 2)) / width
+  const limit2 = (nameBoxProperties.left + nameBoxProperties.width) / width
 
   const pointCount = 15
   const lineCount = 1
@@ -21,8 +24,6 @@ const Waves = () => {
     .range([0, height])
 
   const prevData = d3.range(pointCount).map((i) => {
-    let limit1 = 0.2
-    let limit2 = 0.58
 
     //Wave property : Stating point
     let value = 20
@@ -66,9 +67,7 @@ const Waves = () => {
 
   let vector = d3.range(lineCount).map((i) => {
     return d3.range(pointCount).map((j) => {
-      let limit1 = 0.2
-      let limit2 = 0.58
-
+    
       //Wave property : Speed
       let value = 1
       if (j < (pointCount * limit1)) {
@@ -85,6 +84,8 @@ const Waves = () => {
   React.useEffect(() => {
     const svgElement = d3.select(ref.current)
 
+    svgElement.selectAll("path").remove()
+
     const path = svgElement.append('g')
       .attr('class', 'Waves__line')
       .selectAll("path")
@@ -95,14 +96,16 @@ const Waves = () => {
       .attr("d", line.curve(d3.curveBasis))
 
     const interval = setInterval(() => {
+
+      const path = svgElement
+        .selectAll("path")
+
       path.each(function (d, i) {
         data[i] = data[i].map((v, k) => {
           if (k == 0 || k == pointCount - 1) {
             return v
           }
           else {
-            let limit1 = 0.2
-            let limit2 = 0.58
 
             //Wave property : Height
             let p1 = 45
@@ -135,7 +138,8 @@ const Waves = () => {
       })
     }, 100)
     return () => clearInterval(interval)
-  }, [])
+  }, [nameBoxProperties])
+
 
   return (
     <div className="Waves" >
@@ -145,10 +149,10 @@ const Waves = () => {
       >
         <defs>
           <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop style={{ stopColor: "#000", stopOpacity: 0.2 }} offset="0%" />
-            <stop style={{ stopColor: "#000", stopOpacity: 0.3 }} offset="20%" />
-            <stop style={{ stopColor: "#000", stopOpacity: 0.6 }} offset="58%" />
-            <stop style={{ stopColor: "#000", stopOpacity: 1 }} offset="100%" />
+            <stop style={{ stopColor: "#000", stopOpacity: 0.2 }} offset={0} />
+            <stop style={{ stopColor: "#000", stopOpacity: 0.3 }} offset={limit1} />
+            <stop style={{ stopColor: "#000", stopOpacity: 0.6 }} offset={limit2} />
+            <stop style={{ stopColor: "#000", stopOpacity: 1 }} offset={1} />
           </linearGradient>
         </defs>
       </svg>

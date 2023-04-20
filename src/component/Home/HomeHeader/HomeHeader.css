@@ -19,12 +19,12 @@
   padding-left: 1.6em;
 }
 
-.HomeHeader__content__text__title span {
+.HomeHeader__content__text__title__sub {
   padding-left: 0.6em;
   font-size: 1.5vw;
 }
 
-.HomeHeader__content__text__title h1 {
+.HomeHeader__content__text__title__main {
   font-size: 6vw;
   line-height: 1em;
   margin: .2em 0 .6em;
@@ -52,12 +52,6 @@
   line-height: 1.4em;
   margin: .2em 0 .6em;
   font-weight: bold;
-}
-
-.HomeHeader__waves-canvas {
-  height: 100vh;
-  width: 110vw;
-  margin: -5vh -5vw;
 }
 
 @media (max-width: 900px) {

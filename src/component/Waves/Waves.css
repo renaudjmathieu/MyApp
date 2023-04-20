@@ -6,10 +6,6 @@
   left: 0;
 }
 
-.Waves__background {
-  fill: #f5f7f9;
-}
-
 @keyframes offsetCreep {
   0% {
     stroke-dashoffset: 0%

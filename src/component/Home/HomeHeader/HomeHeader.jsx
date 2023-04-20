@@ -69,26 +69,59 @@ function Item({ Svg, title, text1, text2 }) {
   );
 }
 
-const HomeHeader = () => (
-  <>
-    <div className="HomeHeader">
-      <Waves className="HomeHeader__waves-canvas" />
-      <Box sx={{ flexGrow: 1 }} className="HomeHeader__content">
-        <Grid container spacing={2} className="HomeHeader__content__text">
-          <Grid xs={12}>
-            <div className="HomeHeader__content__text__title">
-              <span>Hi! I'm</span>
-              <h1>Renaud Mathieu</h1>
-            </div>
 
+const HomeHeader = () => {
+
+  const nameBoxRef = React.useRef()
+
+  const [nameBoxProperties, setNameBoxProperties] = React.useState({
+    left: null,
+    top: null,
+    width: null,
+    height: null,
+  })
+
+  const getPosition = () => {
+    setNameBoxProperties({
+      left: nameBoxRef.current.offsetLeft,
+      top: nameBoxRef.current.offsetTop,
+      width: nameBoxRef.current.offsetWidth,
+      height: nameBoxRef.current.offsetHeight,
+    })
+  }
+
+  React.useEffect(() => {
+    getPosition()
+  }, [])
+
+  React.useEffect(() => {
+    window.addEventListener("resize", getPosition);
+  }, [])
+
+  return (
+    <>
+      <div className="HomeHeader">
+        <Waves nameBoxProperties={nameBoxProperties} />
+        <Box sx={{ flexGrow: 1 }} className="HomeHeader__content">
+          <div className="HomeHeader__content__text__title">
+            <div className="HomeHeader__content__text__title__sub">Hi! I'm</div>
+            <div className="HomeHeader__content__text__title__main">
+              <span ref={nameBoxRef}>
+                Renaud Mathieu
+              </span>
+            </div>
+          </div>
+
+          <Grid container spacing={2} className="HomeHeader__content__text">
+
+            {itemList.map((props, idx) => (
+              <Item key={idx} {...props} />
+            ))}
           </Grid>
-          {itemList.map((props, idx) => (
-            <Item key={idx} {...props} />
-          ))}
-        </Grid>
-      </Box>
-    </div>
-  </>
-)
+        </Box>
+      </div>
+    </>
+  )
+}
 
 export default HomeHeader
