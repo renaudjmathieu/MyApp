@@ -85,7 +85,4 @@ For some help on setting up a React app using **Webpack**, check out [this artic
 
 For information on **Azure Static Web Apps**, check out [Static Web Apps!](https://www.azurestaticwebapps.dev/), the [Azure Static Web Apps learning path](https://learn.microsoft.com/en-us/training/paths/azure-static-web-apps/) and the [Azure Static Web Apps documentation](https://learn.microsoft.com/en-us/azure/static-web-apps/overview).
 
-To learn how to implement **light and dark modes** in React, check out [this article](https://levelup.gitconnected.com/dark-mode-in-react-533faaee3c6e) from [FAM](https://famzil.medium.com).
-
-
 

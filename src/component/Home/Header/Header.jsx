@@ -1,13 +1,13 @@
 import React from "react"
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Unstable_Grid2'
-import WebDevelopmentSvg from '../../../img/web.svg'
-import MachineLearningSvg from '../../../img/ml.svg'
-import BusinessIntelligenceSvg from '../../../img/bi.svg'
+import WebDevelopmentSvg from './../../../img/web.svg'
+import MachineLearningSvg from './../../../img/ml.svg'
+import BusinessIntelligenceSvg from './../../../img/bi.svg'
 
 import Waves from '../../Waves/Waves'
 
-import "./HomeHeader.css"
+import "./Header.css"
 
 const itemList = [
   {
@@ -43,12 +43,12 @@ const itemList = [
     Svg: MachineLearningSvg,
     text1: (
       <>
-        I'm good with Python's data science librairies (Pandas, Scikit-learn, TensorFlow, etc.).
+        I'm pretty good with Python's data science stuff (Pandas, Scikit-learn, TensorFlow, etc.).
       </>
     ),
     text2: (
       <>
-        Currently, I'm learning Deep Learning and stuff (RNNs, GANs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
+        I'm also decent and have an interest in Deep Learning (RNNs, GANs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
       </>
     ),
   },
@@ -56,11 +56,11 @@ const itemList = [
 
 function Item({ Svg, title, text1, text2 }) {
   return (
-    <Grid xs={4} className="HomeHeader__content__text__item">
-      <div className="HomeHeader__content__text__item__img">
+    <Grid xs={4} className="Header__content__text__item">
+      <div className="Header__content__text__item__img">
         <Svg className="featureSvg" role="img" />
       </div>
-      <div className="HomeHeader__content__text__item__desc">
+      <div className="Header__content__text__item__desc">
         <h5>{title}</h5>
         <p>{text1}</p>
         <p>{text2}</p>
@@ -69,8 +69,7 @@ function Item({ Svg, title, text1, text2 }) {
   );
 }
 
-
-const HomeHeader = () => {
+const Header = () => {
 
   const nameBoxRef = React.useRef()
 
@@ -100,19 +99,19 @@ const HomeHeader = () => {
 
   return (
     <>
-      <div className="HomeHeader">
+      <div className="Header">
         <Waves nameBoxProperties={nameBoxProperties} />
-        <Box sx={{ flexGrow: 1 }} className="HomeHeader__content">
-          <div className="HomeHeader__content__text__title">
-            <div className="HomeHeader__content__text__title__sub">Hi, I'm</div>
-            <div className="HomeHeader__content__text__title__main">
+        <Box sx={{ flexGrow: 1 }} className="Header__content">
+          <div className="Header__content__title">
+            <div className="Header__content__title__sub">Hi, I'm</div>
+            <div className="Header__content__title__main">
               <span ref={nameBoxRef}>
                 Renaud Mathieu
               </span>
             </div>
           </div>
 
-          <Grid container spacing={2} className="HomeHeader__content__text">
+          <Grid container spacing={2} className="Header__content__text">
 
             {itemList.map((props, idx) => (
               <Item key={idx} {...props} />
@@ -124,4 +123,4 @@ const HomeHeader = () => {
   )
 }
 
-export default HomeHeader
+export default Header

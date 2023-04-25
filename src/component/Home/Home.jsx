@@ -1,14 +1,13 @@
 import React from "react"
-import HomeHeader from "./HomeHeader/HomeHeader"
+import Header from "./Header/Header"
 import Projects from "./../Projects/Projects"
+import Footer from "./Footer/Footer"
 
 const Home = () => (
   <>
       <div className="Home">
-        <HomeHeader />
-        <div className="Home__content">
-          <Projects />
-        </div>
+        <Header />
+        <Footer />
       </div>
   </>
 )
