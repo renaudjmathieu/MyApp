@@ -104,7 +104,7 @@ const HomeHeader = () => {
         <Waves nameBoxProperties={nameBoxProperties} />
         <Box sx={{ flexGrow: 1 }} className="HomeHeader__content">
           <div className="HomeHeader__content__text__title">
-            <div className="HomeHeader__content__text__title__sub">Hi! I'm</div>
+            <div className="HomeHeader__content__text__title__sub">Hi, I'm</div>
             <div className="HomeHeader__content__text__title__main">
               <span ref={nameBoxRef}>
                 Renaud Mathieu

@@ -67,7 +67,7 @@ const Waves = ({ nameBoxProperties }) => {
 
   let vector = d3.range(lineCount).map((i) => {
     return d3.range(pointCount).map((j) => {
-    
+
       //Wave property : Speed
       let value = 1
       if (j < (pointCount * limit1)) {
@@ -82,62 +82,64 @@ const Waves = ({ nameBoxProperties }) => {
   })
 
   React.useEffect(() => {
-    const svgElement = d3.select(ref.current)
+    if (ref.current) {
+      const svgElement = d3.select(ref.current)
 
-    svgElement.selectAll("path").remove()
+      svgElement.selectAll("path").remove()
 
-    const path = svgElement.append('g')
-      .attr('class', 'Waves__line')
-      .selectAll("path")
-      .data(d3.range(0, lineCount))
-      .enter()
-      .append('path')
-      .datum(data[0])
-      .attr("d", line.curve(d3.curveBasis))
-
-    const interval = setInterval(() => {
-
-      const path = svgElement
+      const path = svgElement.append('g')
+        .attr('class', 'Waves__line')
         .selectAll("path")
+        .data(d3.range(0, lineCount))
+        .enter()
+        .append('path')
+        .datum(data[0])
+        .attr("d", line.curve(d3.curveBasis))
 
-      path.each(function (d, i) {
-        data[i] = data[i].map((v, k) => {
-          if (k == 0 || k == pointCount - 1) {
-            return v
-          }
-          else {
+      const interval = setInterval(() => {
 
-            //Wave property : Height
-            let p1 = 45
-            let p2 = 0.9
-            if (k < (pointCount * limit1)) {
-              p1 = 15
-              p2 = 0.3
+        const path = svgElement
+          .selectAll("path")
+
+        path.each(function (d, i) {
+          data[i] = data[i].map((v, k) => {
+            if (k == 0 || k == pointCount - 1) {
+              return v
             }
-            else if (k < (pointCount * limit2)) {
-              p1 = 20
-              p2 = 0.4
+            else {
+
+              //Wave property : Height
+              let p1 = 45
+              let p2 = 0.9
+              if (k < (pointCount * limit1)) {
+                p1 = 15
+                p2 = 0.3
+              }
+              else if (k < (pointCount * limit2)) {
+                p1 = 20
+                p2 = 0.4
+              }
+              if (vector[i][k] > 0 && v > p1) {
+                vector[i][k] = -1 * p2
+              }
+              if (vector[i][k] < 0 && v < 10) {
+                vector[i][k] = 1 * p2
+              }
+              return v + 1 * vector[i][k]
             }
-            if (vector[i][k] > 0 && v > p1) {
-              vector[i][k] = -1 * p2
-            }
-            if (vector[i][k] < 0 && v < 10) {
-              vector[i][k] = 1 * p2
-            }
-            return v + 1 * vector[i][k]
-          }
+          })
+
+          d3.select(this)
+            .datum(data[i])
+            .transition(
+              d3.transition()
+                .duration(500)
+                .ease(d3.easeSin))
+            .attr("d", line.curve(d3.curveBasis))
         })
-
-        d3.select(this)
-          .datum(data[i])
-          .transition(
-            d3.transition()
-              .duration(500)
-              .ease(d3.easeSin))
-          .attr("d", line.curve(d3.curveBasis))
-      })
-    }, 100)
-    return () => clearInterval(interval)
+      }, 100)
+      return () => clearInterval(interval)
+    }
   }, [nameBoxProperties])
 
 
