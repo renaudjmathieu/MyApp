@@ -48,7 +48,7 @@ const itemList = [
     ),
     text2: (
       <>
-        I also like to learn about different Deep Learning architectures (RNNs, GANs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
+        I also like learning about different Deep Learning architectures (RNNs, GANs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
       </>
     ),
   },
