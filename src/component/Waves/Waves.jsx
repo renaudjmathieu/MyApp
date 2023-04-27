@@ -82,22 +82,21 @@ const Waves = ({ nameBoxProperties }) => {
   })
 
   React.useEffect(() => {
-    if (ref.current) {
-      const svgElement = d3.select(ref.current)
+    const svgElement = d3.select(ref.current)
 
-      svgElement.selectAll("path").remove()
+    svgElement.selectAll("path").remove()
 
-      const path = svgElement.append('g')
-        .attr('class', 'Waves__line')
-        .selectAll("path")
-        .data(d3.range(0, lineCount))
-        .enter()
-        .append('path')
-        .datum(data[0])
-        .attr("d", line.curve(d3.curveBasis))
+    const path = svgElement.append('g')
+      .attr('class', 'Waves__line')
+      .selectAll("path")
+      .data(d3.range(0, lineCount))
+      .enter()
+      .append('path')
+      .datum(data[0])
+      .attr("d", line.curve(d3.curveBasis))
 
-      const interval = setInterval(() => {
-
+    const interval = setInterval(() => {
+      if (!nameBoxProperties.windowResizing) {
         const path = svgElement
           .selectAll("path")
 
@@ -137,11 +136,10 @@ const Waves = ({ nameBoxProperties }) => {
                 .ease(d3.easeSin))
             .attr("d", line.curve(d3.curveBasis))
         })
-      }, 100)
-      return () => clearInterval(interval)
-    }
+      }
+    }, 100)
+    return () => clearInterval(interval)
   }, [nameBoxProperties])
-
 
   return (
     <div className="Waves" >
