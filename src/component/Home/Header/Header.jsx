@@ -80,22 +80,40 @@ const Header = () => {
     height: null,
   })
 
-  const getPosition = () => {
-    setNameBoxProperties({
-      left: nameBoxRef.current.offsetLeft,
-      top: nameBoxRef.current.offsetTop,
-      width: nameBoxRef.current.offsetWidth,
-      height: nameBoxRef.current.offsetHeight,
-    })
+  const defineNameBoxProperties = () => {
+    if (nameBoxRef.current) {
+      setNameBoxProperties({
+        left: nameBoxRef.current.offsetLeft,
+        top: nameBoxRef.current.offsetTop,
+        width: nameBoxRef.current.offsetWidth,
+        height: nameBoxRef.current.offsetHeight,
+      })
+    }
   }
 
+  const [windowResizing, setWindowResizing] = React.useState(false)
+
   React.useEffect(() => {
-    getPosition()
+    defineNameBoxProperties()
   }, [])
 
   React.useEffect(() => {
-    window.addEventListener("resize", getPosition);
+    let timeout;
+    const handleResize = () => {
+      clearTimeout(timeout)
+
+      setWindowResizing(true)
+
+      timeout = setTimeout(() => {
+        setWindowResizing(false)
+        defineNameBoxProperties()
+      }, 500)
+    }
+    window.addEventListener("resize", handleResize)
+
+    return () => window.removeEventListener("resize", handleResize);
   }, [])
+
 
   return (
     <>
