@@ -3,7 +3,7 @@ import * as d3 from "d3"
 
 import "./Waves.css"
 
-const Waves = ({ nameBoxProperties }) => {
+const Waves = ({ nameBoxProperties, color }) => {
   const ref = React.useRef()
 
   const height = nameBoxProperties.top + nameBoxProperties.height
@@ -149,10 +149,10 @@ const Waves = ({ nameBoxProperties }) => {
       >
         <defs>
           <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop style={{ stopColor: "#000", stopOpacity: 0.2 }} offset={0} />
-            <stop style={{ stopColor: "#000", stopOpacity: 0.3 }} offset={limit1} />
-            <stop style={{ stopColor: "#000", stopOpacity: 0.6 }} offset={limit2} />
-            <stop style={{ stopColor: "#000", stopOpacity: 1 }} offset={1} />
+            <stop style={{ stopColor: color, stopOpacity: 0.2 }} offset={0} />
+            <stop style={{ stopColor: color, stopOpacity: 0.3 }} offset={limit1} />
+            <stop style={{ stopColor: color, stopOpacity: 0.6 }} offset={limit2} />
+            <stop style={{ stopColor: color, stopOpacity: 1 }} offset={1} />
           </linearGradient>
         </defs>
       </svg>

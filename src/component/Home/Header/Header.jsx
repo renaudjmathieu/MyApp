@@ -54,11 +54,11 @@ const itemList = [
   },
 ];
 
-function Item({ Svg, title, text1, text2 }) {
+function Item({ Svg, title, text1, text2, hue, lightness, alpha }) {
   return (
     <Grid xs={4} className="Header__content__text__item">
       <div className="Header__content__text__item__img">
-        <Svg className="featureSvg" role="img" />
+        <Svg className="featureSvg" role="img" fill={`hsl(${hue}, 100%, ${lightness}%`} />
       </div>
       <div className="Header__content__text__item__desc">
         <h5>{title}</h5>
@@ -114,16 +114,34 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
+  const [hue, setHue] = React.useState(Math.floor(Math.random() * 360))
+  const [lightness, setLightness] = React.useState(0)
+  const [alpha, setAlpha] = React.useState(1)
+
+  React.useEffect(() => {
+    const listener = () => {
+      if (window.pageYOffset < 10) {
+        setHue(Math.floor(Math.random() * 360))
+      }
+      setLightness(Math.round(window.pageYOffset / 2) <= 50 ? Math.round(window.pageYOffset / 2) : 50)
+      setAlpha(Math.round(window.pageYOffset) <= 100 ? Math.round(window.pageYOffset) : 100)
+    }
+    document.addEventListener('scroll', listener);
+    return () => {
+      document.removeEventListener('scroll', listener)
+    }
+  }, [])
+
 
   return (
     <>
       <div className="Header">
-        <Waves nameBoxProperties={nameBoxProperties} />
+        <Waves nameBoxProperties={nameBoxProperties} color={`hsl(${hue}, 100%, ${lightness}%`} />
         <Box sx={{ flexGrow: 1 }} className="Header__content">
           <div className="Header__content__title">
             <div className="Header__content__title__sub">Hi, I'm</div>
             <div className="Header__content__title__main">
-              <span ref={nameBoxRef}>
+              <span ref={nameBoxRef} style={{ textShadow: `2px 2px hsla(${hue}, 100%, ${lightness}%, ${alpha}%)` }}>
                 Renaud Mathieu
               </span>
             </div>
@@ -132,7 +150,7 @@ const Header = () => {
           <Grid container spacing={2} className="Header__content__text">
 
             {itemList.map((props, idx) => (
-              <Item key={idx} {...props} />
+              <Item key={idx} hue={hue} lightness={lightness} alpha={alpha} {...props} />
             ))}
           </Grid>
         </Box>
