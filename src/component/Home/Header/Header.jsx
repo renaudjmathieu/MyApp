@@ -141,7 +141,7 @@ const Header = () => {
           <div className="Header__content__title">
             <div className="Header__content__title__sub">Hi, I'm</div>
             <div className="Header__content__title__main">
-              <span ref={nameBoxRef} style={{ textShadow: `2px 2px hsla(${hue}, 100%, ${lightness}%, ${alpha}%)` }}>
+              <span ref={nameBoxRef} style={{ color: `hsl(${hue}, 100%, ${lightness}%`, textShadow: `3px 3px hsla(0, 100%, 0%, ${alpha}%)` }}>
                 Renaud Mathieu
               </span>
             </div>
