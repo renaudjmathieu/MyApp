@@ -27,6 +27,7 @@ npm install html-webpack-plugin --save-dev
 npm install @babel/core babel-loader --save-dev
 npm install @babel/preset-env @babel/preset-react --save-dev
 npm install style-loader css-loader --save-dev
+npm install file-loader --save-dev
 npm install react-router-dom
 npm install @mui/material @emotion/react @emotion/styled
 npm install @mui/icons-material
