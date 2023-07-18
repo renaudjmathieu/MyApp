@@ -69,8 +69,8 @@ function Item({ Svg, title, text1, text2, hue, lightness, alpha }) {
   );
 }
 
-const Header = () => {
-
+const Header = ({ hue, lightness, alpha }) => {
+  
   const nameBoxRef = React.useRef()
 
   const [nameBoxProperties, setNameBoxProperties] = React.useState({
@@ -114,23 +114,7 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
-  const [hue, setHue] = React.useState(Math.floor(Math.random() * 360))
-  const [lightness, setLightness] = React.useState(0)
-  const [alpha, setAlpha] = React.useState(1)
 
-  React.useEffect(() => {
-    const listener = () => {
-      if (window.pageYOffset < 10) {
-        setHue(Math.floor(Math.random() * 360))
-      }
-      setLightness(Math.round(window.pageYOffset / 2) <= 50 ? Math.round(window.pageYOffset / 2) : 50)
-      setAlpha(Math.round(window.pageYOffset) <= 100 ? Math.round(window.pageYOffset) : 100)
-    }
-    document.addEventListener('scroll', listener);
-    return () => {
-      document.removeEventListener('scroll', listener)
-    }
-  }, [])
 
 
   return (
