@@ -14,7 +14,7 @@ const Projects = ({ hue, lightness, alpha }) => {
           </div>
 
           <div className="Projects__content__item__title">
-            Data dashboard with D3 (work in progress)
+            Data dashboard with D3
           </div>
           <div class="Projects__content__item__content">
             <img style={{ filter: `hue-rotate(${hue}deg)`}} src={project1} className="Projects__content__item__img" alt="project1" />
