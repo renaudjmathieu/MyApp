@@ -54,11 +54,11 @@ const itemList = [
   },
 ];
 
-function Item({ Svg, title, text1, text2, hue, lightness, alpha }) {
+function Item({ Svg, title, text1, text2, hue, saturation, lightness, alpha }) {
   return (
     <Grid xs={4} className="Header__content__text__item">
       <div className="Header__content__text__item__img">
-        <Svg className="featureSvg" role="img" fill={`hsl(${hue}, 100%, ${lightness}%`} />
+        <Svg className="featureSvg" role="img" fill={`hsl(${hue}, ${saturation}%, ${lightness}%`} />
       </div>
       <div className="Header__content__text__item__desc">
         <h5>{title}</h5>
@@ -69,7 +69,7 @@ function Item({ Svg, title, text1, text2, hue, lightness, alpha }) {
   );
 }
 
-const Header = ({ hue, lightness, alpha }) => {
+const Header = ({ hue, saturation, lightness, alpha }) => {
   
   const nameBoxRef = React.useRef()
 
@@ -120,12 +120,12 @@ const Header = ({ hue, lightness, alpha }) => {
   return (
     <>
       <div className="Header">
-        <Waves nameBoxProperties={nameBoxProperties} color={`hsl(${hue}, 100%, ${lightness}%`} />
+        <Waves nameBoxProperties={nameBoxProperties} color={`hsl(${hue}, ${saturation}%, ${lightness}%`} />
         <Box sx={{ flexGrow: 1 }} className="Header__content">
           <div className="Header__content__title">
             <div className="Header__content__title__sub">Hi, I'm</div>
             <div className="Header__content__title__main">
-              <span ref={nameBoxRef} style={{ color: `hsl(${hue}, 100%, ${lightness}%`, textShadow: `0.035em 0.035em hsla(0, 100%, 0%, ${alpha}%)` }}>
+              <span ref={nameBoxRef} style={{ color: `hsl(${hue}, ${saturation}%, ${lightness}%`, textShadow: `0.035em 0.035em hsla(0, 100%, 0%, ${alpha}%)` }}>
                 Renaud Mathieu
               </span>
             </div>
@@ -134,7 +134,7 @@ const Header = ({ hue, lightness, alpha }) => {
           <Grid container spacing={2} className="Header__content__text">
 
             {itemList.map((props, idx) => (
-              <Item key={idx} hue={hue} lightness={lightness} alpha={alpha} {...props} />
+              <Item key={idx} hue={hue} saturation={saturation} lightness={lightness} alpha={alpha} {...props} />
             ))}
           </Grid>
         </Box>
