@@ -5,8 +5,8 @@ import Projects from "./../Projects/Projects"
 const Home = () => {
 
   const [hue, setHue] = React.useState(Math.floor(Math.random() * 360))
-  const [saturation, setSaturation] = React.useState(Math.floor(Math.random() * (100 - 80 + 1) + 80))
-  const [lightness, setLightness] = React.useState(Math.floor(Math.random() * (60 - 40 + 1) + 40))
+  const [saturation, setSaturation] = React.useState(100)
+  const [lightness, setLightness] = React.useState(0)
   const [alpha, setAlpha] = React.useState(1)
 
   React.useEffect(() => {
