@@ -4,12 +4,12 @@ import project2 from './../../img/project2.png'
 
 import "./Projects.css"
 
-const Projects = ({ hue, lightness, alpha }) => {
+const Projects = ({ hue, saturation, lightness, alpha }) => {
   return (
     <>
       <div className="Projects">
         <div className="Projects__content">
-          <div className="Projects__content__title" style={{ color: `hsl(${hue}, 100%, ${lightness}%`, textShadow: `0.035em 0.035em hsla(0, 100%, 0%, ${alpha}%)` }}>
+          <div className="Projects__content__title" style={{ color: `hsl(${hue}, ${saturation}%, ${lightness}%`, textShadow: `0.035em 0.035em hsla(0, 100%, 0%, ${alpha}%)` }}>
             Stuff
           </div>
 
