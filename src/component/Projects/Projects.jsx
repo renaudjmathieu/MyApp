@@ -19,7 +19,7 @@ const Projects = ({ hue, saturation, lightness, alpha }) => {
           <div class="Projects__content__item__content">
             <img style={{ filter: `hue-rotate(${hue}deg)`}} src={project1} className="Projects__content__item__img" alt="project1" />
             <div class="Projects__content__item__middle">
-              <a href="https://red-dune-0c424950f.2.azurestaticapps.net/"><button style={{ background: `hsl(${hue}, 100%, 50%`}} class="Projects__content__item__button">Click me!</button></a>
+              <a href="https://red-dune-0c424950f.2.azurestaticapps.net/"><button style={{ background: `hsl(${hue}, ${saturation}%, ${lightness}%`}} class="Projects__content__item__button">Click me!</button></a>
             </div>
           </div>
 
@@ -30,7 +30,7 @@ const Projects = ({ hue, saturation, lightness, alpha }) => {
           <div class="Projects__content__item__content">
             <img style={{ filter: `hue-rotate(${hue}deg)`}} src={project2} className="Projects__content__item__img" alt="project2" />
             <div class="Projects__content__item__middle">
-              <a href="https://proud-cliff-07e30880f.2.azurestaticapps.net/"><button style={{ background: `hsl(${hue}, 100%, 50%`}} class="Projects__content__item__button">Click me!</button></a>
+              <a href="https://proud-cliff-07e30880f.2.azurestaticapps.net/"><button style={{ background: `hsl(${hue}, ${saturation}%, ${lightness}%`}} class="Projects__content__item__button">Click me!</button></a>
             </div>
           </div>
 
