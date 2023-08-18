@@ -1,6 +1,5 @@
 .Header {
   position: relative;
-  height: 110vh;
   width: 100%;
   overflow: hidden;
 }
@@ -55,9 +54,6 @@
 }
 
 @media (max-width: 900px) {
-  .Header {
-    max-height: 34em;
-  }
 
   .Header__content {
     margin: 6em 50px;
@@ -73,15 +69,32 @@
 }
 
 @media (max-width: 600px) {
+  
   .Header__content {
-    margin: 6em 1em;
+    margin: 5em 1em;
+    flex-direction: column;
+  }
+
+  .Header__content__title {
+    padding-left: 0;
+    padding-bottom: 2em;
   }
 
   .Header__content__title__sub {
     padding-left: 0;
+    font-size: 0.8em;
   }
 
   .Header__content__title__main {
-    font-size: 1.5em;
+    font-size: 1.8em;
+  }
+  
+  .Header__content__text__item__desc {
+    font-size: 0.9em;
+  }
+  
+  .Header__content__text__item__desc h5 {
+    font-size: 1.2em;
+    font-weight: bold;
   }
 }

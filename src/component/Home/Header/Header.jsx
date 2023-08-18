@@ -56,7 +56,7 @@ const itemList = [
 
 function Item({ Svg, title, text1, text2, hue, saturation, lightness, alpha }) {
   return (
-    <Grid xs={4} className="Header__content__text__item">
+    <Grid item xs={12} sm={4} className="Header__content__text__item">
       <div className="Header__content__text__item__img">
         <Svg className="featureSvg" role="img" fill={`hsl(${hue}, ${saturation}%, ${lightness}%`} />
       </div>
@@ -114,9 +114,6 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, [])
 
-
-
-
   return (
     <>
       <div className="Header">
@@ -132,7 +129,6 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
           </div>
 
           <Grid container spacing={2} className="Header__content__text">
-
             {itemList.map((props, idx) => (
               <Item key={idx} hue={hue} saturation={saturation} lightness={lightness} alpha={alpha} {...props} />
             ))}

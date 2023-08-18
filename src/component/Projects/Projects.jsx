@@ -23,7 +23,6 @@ const Projects = ({ hue, saturation, lightness, alpha }) => {
             </div>
           </div>
 
-
           <div className="Projects__content__item__title">
             Animated SVG with D3
           </div>
