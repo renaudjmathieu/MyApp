@@ -4,7 +4,7 @@ import project2 from './../../img/project2.png'
 
 import "./Projects.css"
 
-const Projects = ({ hue, saturation, lightness, alpha }) => {
+const Projects = ({ hue, saturation, lightness, alpha, filterSaturation }) => {
   return (
     <>
       <div className="Projects">
@@ -17,7 +17,7 @@ const Projects = ({ hue, saturation, lightness, alpha }) => {
             Data dashboard with D3 (<i>WIP</i>)
           </div>
           <div class="Projects__content__item__content">
-            <img style={{ filter: `hue-rotate(${hue}deg)` }} src={project1} className="Projects__content__item__img" alt="project1" />
+            <img style={{ filter: `hue-rotate(${hue}deg) saturate(${filterSaturation})` }} src={project1} className="Projects__content__item__img" alt="project1" />
             <div class="Projects__content__item__middle">
               <a href="https://red-dune-0c424950f.2.azurestaticapps.net/"><button style={{ background: `hsl(${hue}, ${saturation}%, ${lightness}%` }} class="Projects__content__item__button">Click me!</button></a>
             </div>
@@ -27,7 +27,7 @@ const Projects = ({ hue, saturation, lightness, alpha }) => {
             Animated SVG with D3
           </div>
           <div class="Projects__content__item__content">
-            <img style={{ filter: `hue-rotate(${hue}deg)` }} src={project2} className="Projects__content__item__img" alt="project2" />
+            <img style={{ filter: `hue-rotate(${hue}deg) saturate(${filterSaturation})` }} src={project2} className="Projects__content__item__img" alt="project2" />
             <div class="Projects__content__item__middle">
               <a href="https://proud-cliff-07e30880f.2.azurestaticapps.net/"><button style={{ background: `hsl(${hue}, ${saturation}%, ${lightness}%` }} class="Projects__content__item__button">Click me!</button></a>
             </div>
