@@ -34,7 +34,7 @@ const itemList = [
     ),
     text2: (
       <>
-        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in most Microsoft BI tools.
+        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in like all the Microsoft data stuff.
       </>
     ),
   },
