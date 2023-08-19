@@ -82,7 +82,7 @@
 
   .Header__content__title__sub {
     padding-left: 0;
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .Header__content__title__main {
@@ -96,5 +96,10 @@
   .Header__content__text__item__desc h5 {
     font-size: 1.2em;
     font-weight: bold;
+    margin: 0
+  }
+
+  .Header__content__text__item__img svg {
+    margin: 0
   }
 }
