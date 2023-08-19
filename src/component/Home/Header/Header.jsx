@@ -48,7 +48,7 @@ const itemList = [
     ),
     text2: (
       <>
-        I also like learning about different Deep Learning architectures (RNNs, GANs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
+        I also like learning about different Deep Learning architectures (RNNs, VAEs, <a className="link" href="https://www.kaggle.com/code/renaudmathieu/transformer-from-scratch" target="_blank">Transformers</a>, etc.).
       </>
     ),
   },
@@ -92,7 +92,6 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
   }
 
   const [windowWidth, setWindowWidth] = React.useState(window.width)
-  const [windowHeight, setWindowHeight] = React.useState(window.height)
 
   React.useEffect(() => {
     defineNameBoxProperties()
@@ -104,12 +103,11 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
       clearTimeout(timeout)
 
       timeout = setTimeout(() => {
-        if (window.innerWidth !== windowWidth || window.innerHeight !== windowHeight) {
+        if (window.innerWidth !== windowWidth) {
           defineNameBoxProperties()
           setWindowWidth(window.innerWidth)
-          setWindowHeight(window.innerHeight)
         }
-      }, 500)
+      }, 2000)
     }
     window.addEventListener("resize", handleResize)
 
