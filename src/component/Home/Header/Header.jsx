@@ -70,7 +70,7 @@ function Item({ Svg, title, text1, text2, hue, saturation, lightness, alpha }) {
 }
 
 const Header = ({ hue, saturation, lightness, alpha }) => {
-  
+
   const nameBoxRef = React.useRef()
 
   const [nameBoxProperties, setNameBoxProperties] = React.useState({
@@ -91,7 +91,8 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
     }
   }
 
-  const [windowResizing, setWindowResizing] = React.useState(false)
+  const [windowWidth, setWindowWidth] = React.useState(window.width)
+  const [windowHeight, setWindowHeight] = React.useState(window.height)
 
   React.useEffect(() => {
     defineNameBoxProperties()
@@ -102,11 +103,12 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
     const handleResize = () => {
       clearTimeout(timeout)
 
-      setWindowResizing(true)
-
       timeout = setTimeout(() => {
-        setWindowResizing(false)
-        defineNameBoxProperties()
+        if (window.innerWidth !== windowWidth || window.innerHeight !== windowHeight) {
+          defineNameBoxProperties()
+          setWindowWidth(window.innerWidth)
+          setWindowHeight(window.innerHeight)
+        }
       }, 500)
     }
     window.addEventListener("resize", handleResize)
