@@ -91,7 +91,7 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
     }
   }
 
-  const [windowWidth, setWindowWidth] = React.useState(window.width)
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
     defineNameBoxProperties()
@@ -105,9 +105,9 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
       timeout = setTimeout(() => {
         if (window.innerWidth !== windowWidth) {
           defineNameBoxProperties()
-          setWindowWidth(window.innerWidth)
+          setWindowWidth(window.innerWidth);
         }
-      }, 2000)
+      }, 500)
     }
     window.addEventListener("resize", handleResize)
 
