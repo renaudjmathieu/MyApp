@@ -9,8 +9,8 @@ const Projects = ({ hue, saturation, lightness, alpha, filterSaturation }) => {
     <>
       <div className="Projects">
         <div className="Projects__content">
-          <div className="Projects__content__title" style={{ color: `hsl(${hue}, ${saturation}%, ${lightness}%`, textShadow: `0.035em 0.035em hsla(0, 100%, 0%, ${alpha}%)` }}>
-            Projects and stuff
+          <div className="Projects__content__title" style={{ color: `hsl(${hue}, ${saturation}%, ${lightness}%`, textShadow: `0.025em 0.025em hsla(0, 100%, 0%, ${alpha}%)` }}>
+            Projects
           </div>
 
           <div className="Projects__content__item__title">
