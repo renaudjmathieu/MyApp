@@ -34,7 +34,7 @@ const itemList = [
     ),
     text2: (
       <>
-        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in like all the Microsoft data stuff.
+        I have strong data analytical and engineering skills and <a className="link" href="https://www.credly.com/users/renaudmathieu/badges?sort=-state_updated_at&page=1" target="_blank">I'm certified</a> in Microsoft BI products.
       </>
     ),
   },
@@ -122,7 +122,7 @@ const Header = ({ hue, saturation, lightness, alpha }) => {
           <div className="Header__content__title">
             <div className="Header__content__title__sub">Hi, I'm</div>
             <div className="Header__content__title__main">
-              <span ref={nameBoxRef} style={{ color: `hsl(${hue}, ${saturation}%, ${lightness}%`, textShadow: `0.035em 0.035em hsla(0, 100%, 0%, ${alpha}%)` }}>
+              <span ref={nameBoxRef} style={{ color: `hsl(${hue}, ${saturation}%, ${lightness}%`, textShadow: `0.030em 0.030em hsla(0, 100%, 0%, ${alpha}%)` }}>
                 Renaud Mathieu
               </span>
             </div>
